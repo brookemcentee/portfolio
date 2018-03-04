@@ -33767,8 +33767,9 @@ var withRouter = function withRouter(Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router_dom__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navigation__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
 var Accordion,
     AccordionItem,
     boundMethodCheck = function (instance, Constructor) {
@@ -33776,6 +33777,8 @@ var Accordion,
     throw new Error('Bound instance method accessed before binding');
   }
 };
+
+
 
 
 
@@ -33799,27 +33802,29 @@ Accordion = class Accordion extends __WEBPACK_IMPORTED_MODULE_0_react___default.
     return;
   }
 
-  openItem(key) {
+  openItem(item) {
     boundMethodCheck(this, Accordion);
+    __WEBPACK_IMPORTED_MODULE_4_jquery___default()(__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this.refs[`links-${item.key}`])).css('color', item.color);
     if (!this.state.transitioning) {
-      this.refs[`item-${key}`].open();
+      this.refs[`item-${item.key}`].open();
     }
   }
 
-  closeItem(key) {
+  closeItem(item) {
     boundMethodCheck(this, Accordion);
+    __WEBPACK_IMPORTED_MODULE_4_jquery___default()(__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this.refs[`links-${item.key}`])).css('color', '#000');
     if (!this.state.transitioning) {
-      this.refs[`item-${key}`].close();
+      this.refs[`item-${item.key}`].close();
     }
   }
 
-  expandItem(key) {
+  expandItem(item) {
     boundMethodCheck(this, Accordion);
     if (!this.state.transitioning) {
       this.setState({
         transitioning: true
       }, () => {
-        this.refs[`item-${key}`].expand();
+        this.refs[`item-${item.key}`].expand();
       });
     }
   }
@@ -33849,7 +33854,9 @@ Accordion = class Accordion extends __WEBPACK_IMPORTED_MODULE_0_react___default.
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
               { className: 'accordion-title-header' },
-              'Brooke McEntee'
+              'Brooke',
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+              'McEntee'
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
@@ -33871,11 +33878,7 @@ Accordion = class Accordion extends __WEBPACK_IMPORTED_MODULE_0_react___default.
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: `col-md-5 ${this.state.contentHidden ? 'hidden' : ''}` },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          null,
-          'Header Links Placeholder'
-        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__navigation__["a" /* default */], null),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           { className: 'accordion-links' },
@@ -33885,7 +33888,7 @@ Accordion = class Accordion extends __WEBPACK_IMPORTED_MODULE_0_react___default.
               { key: `links-${i}` },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'a',
-                { href: 'javascript:;', onMouseEnter: this.openItem.bind(this, item.key), onMouseLeave: this.closeItem.bind(this, item.key), onClick: this.expandItem.bind(this, item.key) },
+                { ref: `links-${item.key}`, href: 'javascript:;', onMouseEnter: this.openItem.bind(this, item), onMouseLeave: this.closeItem.bind(this, item), onClick: this.expandItem.bind(this, item) },
                 item.name
               )
             );
@@ -33916,7 +33919,7 @@ AccordionItem = class AccordionItem extends __WEBPACK_IMPORTED_MODULE_0_react___
       isOpen: true
     }, () => {
       var node;
-      node = __WEBPACK_IMPORTED_MODULE_3_jquery___default()(__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this.refs.item));
+      node = __WEBPACK_IMPORTED_MODULE_4_jquery___default()(__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this.refs.item));
       node.stop();
       return node.animate({
         width: `${node.offset().left + node.width()}px`
@@ -33930,7 +33933,7 @@ AccordionItem = class AccordionItem extends __WEBPACK_IMPORTED_MODULE_0_react___
       isOpen: false
     }, () => {
       var node;
-      node = __WEBPACK_IMPORTED_MODULE_3_jquery___default()(__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this.refs.item));
+      node = __WEBPACK_IMPORTED_MODULE_4_jquery___default()(__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this.refs.item));
       node.stop();
       return node.animate({
         width: '50px'
@@ -33945,11 +33948,11 @@ AccordionItem = class AccordionItem extends __WEBPACK_IMPORTED_MODULE_0_react___
         expanded: true
       }, () => {
         var node, offset, right;
-        node = __WEBPACK_IMPORTED_MODULE_3_jquery___default()(__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this.refs.item));
-        offset = __WEBPACK_IMPORTED_MODULE_3_jquery___default()(window).width() - (node.offset().left + node.outerWidth());
+        node = __WEBPACK_IMPORTED_MODULE_4_jquery___default()(__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this.refs.item));
+        offset = __WEBPACK_IMPORTED_MODULE_4_jquery___default()(window).width() - (node.offset().left + node.outerWidth());
         right = Math.ceil(offset - parseInt(node.css('right')));
         node.animate({
-          width: `${__WEBPACK_IMPORTED_MODULE_3_jquery___default()(window).width()}px`,
+          width: `${__WEBPACK_IMPORTED_MODULE_4_jquery___default()(window).width()}px`,
           right: `-${right}px`
         }, 300, () => {
           this.props.hideContent();
@@ -33993,7 +33996,10 @@ AccordionItem = class AccordionItem extends __WEBPACK_IMPORTED_MODULE_0_react___
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_page__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_content__ = __webpack_require__(79);
 var PageMobile;
+
+
 
 
 
@@ -34011,7 +34017,44 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
   }
 
   render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_page__["a" /* default */], null);
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_3__components_page__["a" /* default */],
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["a" /* Header */], { title: 'Mobile', subtitle: '\u2013 ui/ux design' }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4__components_content__["b" /* Paragraph */],
+        { title: 'challenge' },
+        'Tasks are the most important part of the student experience on NextTier. Therefore, we need a robust feature that clearly highlights relevant tasks, while also communicating task status and action items. My challenge was to improve the student tasks experience based on one year of user feedback by creating attractive, familiar and easy to use UI components.'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4__components_content__["b" /* Paragraph */],
+        { title: 'process' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'ordered-list' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            null,
+            '1. Requirements'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            null,
+            '2. Sketches'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            null,
+            '3. Mockups'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            null,
+            '4. Development'
+          )
+        )
+      )
+    );
   }
 
 };
@@ -34027,9 +34070,12 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navigation__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
 var Page;
+
+
 
 
 
@@ -34047,14 +34093,166 @@ Page = class Page extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
-      null,
-      'This is a page'
+      { className: 'page' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'container' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'row' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'col-md-7' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'content-author' },
+              'brooke mcentee'
+            ),
+            this.props.children
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'col-md-5' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__navigation__["a" /* default */], null)
+          )
+        )
+      )
     );
   }
 
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Page);
+
+/***/ }),
+/* 79 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Header; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Paragraph; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_jquery__);
+var Header, Paragraph;
+
+
+
+
+
+
+
+Header = class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    return;
+  }
+
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'row' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'col-sm-12' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'content-header' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'content-header-title' },
+            this.props.title
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'content-header-subtitle' },
+            this.props.subtitle
+          )
+        )
+      )
+    );
+  }
+
+};
+
+Paragraph = class Paragraph extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    return;
+  }
+
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'row content-section' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'col-sm-12' },
+        this.props.title ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'content-section-title' },
+          this.props.title
+        ) : void 0,
+        this.props.children
+      )
+    );
+  }
+
+};
+
+
+
+/***/ }),
+/* 80 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_jquery__);
+var Navigation;
+
+
+
+
+
+
+
+Navigation = class Navigation extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    return;
+  }
+
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'navigation' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'a',
+        { href: 'javascript:;' },
+        'work'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'a',
+        { href: 'javascript:;' },
+        'about'
+      )
+    );
+  }
+
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Navigation);
 
 /***/ })
 /******/ ]);

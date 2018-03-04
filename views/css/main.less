@@ -7,13 +7,36 @@
 @import "../../node_modules/bootstrap/less/buttons";
 @import "../../node_modules/bootstrap/less/forms";
 
+//  VARIABLE OVERRIDES
+
+@grid-gutter-width: 100px;
+
+// GLOBAL STYLES
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+}
+
+// UTILITIES
+
+.sans-serif {
+  font-family: 'Karla', sans-serif;
+}
+
 .clearfix {
   .clearfix()
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .full-height{
   height: 100vh;
 }
+
+// COMPONENTS
 
 .container-fluid.no-padding {
   padding: 0;
@@ -25,8 +48,19 @@
 
 .accordion-title {
   color: #FFF;
-  position: relative;
+  position: absolute;
+  bottom: 50px;
   z-index: 2000;
+  line-height: 52px;
+  font-weight: bold;
+  .sans-serif();
+  .accordion-title-header {
+    font-size: 64px;
+  }
+  .accordion-title-subheader {
+    font-size: 32px;
+    font-style: italic;
+  }
 }
 
 .accordion-items {
@@ -42,6 +76,31 @@
   .full-height();
 }
 
-.hidden {
-  visibility: hidden;
+.accordion-links{
+  margin-top: 50px;
+  line-height: 32px;
+  a {
+    display: block;
+    color: #000;
+    font-size: 32px;
+    .sans-serif();
+    margin-bottom: 32px;
+  }
+}
+
+.navigation{
+  margin-top: 50px;
+  a {
+    color: #b6b6b6;
+    font-size: 16px;
+    .sans-serif();
+    margin-right: 50px;
+    &:last-child{
+      margin-right: 0px;
+    }
+    &:hover {
+      color: #000000;
+      text-decoration: underline;
+    }
+  }
 }

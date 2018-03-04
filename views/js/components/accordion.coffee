@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Redirect } from "react-router-dom"
 
+import Navigation from './navigation'
+
 import $ from 'jquery'
 
 class Accordion extends React.Component 
@@ -13,22 +15,24 @@ class Accordion extends React.Component
       contentHidden: false
     return
 
-  openItem: (key) =>
+  openItem: (item) =>
+    $(ReactDOM.findDOMNode(@refs["links-#{item.key}"])).css 'color', item.color
     if not @state.transitioning
-      @refs["item-#{key}"].open()
+      @refs["item-#{item.key}"].open()
     return
 
-  closeItem: (key) =>
+  closeItem: (item) =>
+    $(ReactDOM.findDOMNode(@refs["links-#{item.key}"])).css 'color', '#000'
     if not @state.transitioning
-      @refs["item-#{key}"].close()
+      @refs["item-#{item.key}"].close()
     return
 
-  expandItem: (key) =>
+  expandItem: (item) =>
     if not @state.transitioning
       @setState
         transitioning: true
       , =>
-        @refs["item-#{key}"].expand()
+        @refs["item-#{item.key}"].expand()
         return
     return
 
@@ -43,7 +47,7 @@ class Accordion extends React.Component
         <div className="col-md-7 accordion-content" style={background: "#{if @state.contentHidden then '#FFF' else '#E2E2E2'}"}>
           <div className="accordion-title">
             <div className="accordion-title-header">
-              Brooke McEntee
+              Brooke<br />McEntee
             </div>
             <div className="accordion-title-subheader">
               – ui/ux designer
@@ -68,16 +72,17 @@ class Accordion extends React.Component
         </div>
       </div>
       <div className="col-md-5 #{if @state.contentHidden then 'hidden' else ''}">
-        <div>Header Links Placeholder</div>
+        <Navigation />
         <div className="accordion-links">
           {
             @props.items.map (item, i) =>
               <div key="links-#{i}" >
                 <a
+                  ref="links-#{item.key}"
                   href="javascript:;"
-                  onMouseEnter={@openItem.bind @, item.key}
-                  onMouseLeave={@closeItem.bind @, item.key}
-                  onClick={@expandItem.bind @, item.key}
+                  onMouseEnter={@openItem.bind @, item}
+                  onMouseLeave={@closeItem.bind @, item}
+                  onClick={@expandItem.bind @, item}
                 >
                   {item.name}
                 </a>
