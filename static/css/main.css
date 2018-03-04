@@ -1943,8 +1943,12 @@ select[multiple].input-lg {
   padding: 0;
 }
 .accordion-content {
-  background: #E2E2E2;
   height: 100vh;
+}
+.accordion-title {
+  color: #FFF;
+  position: relative;
+  z-index: 2000;
 }
 .accordion-items {
   position: absolute;
@@ -1956,4 +1960,7 @@ select[multiple].input-lg {
   width: 50px;
   position: absolute;
   height: 100vh;
+}
+.hidden {
+  visibility: hidden;
 }

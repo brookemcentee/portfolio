@@ -1,24 +1,31 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import $ from 'jquery'
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
 
 import Accordion from './components/accordion'
 
+import PageMobile from './pages/mobile'
+
 accordionItems = [
-  name: 'First'
-  color: '#DC9596'
+  key: 'mobile'
+  name: 'Mobile'
+  color: '#28666E'
 ,
-  name: 'Second'
-  color: '#F6AE2D'
-,
-  name: 'Third'
+  key: 'scholarships'
+  name: 'Scholarships'
   color: '#64B6AC'
 ,
-  name: 'Four'
-  color: '#28666E'
+  key: 'basketball'
+  name: 'Basketball'
+  color: '#F6AE2D'
+,
+  key: 'udine'
+  name: 'UDine'
+  color: '#DC9596'
 ]
 
-class App extends React.Component 
+class App extends React.Component
 
   constructor: (props) ->
     super props
@@ -26,8 +33,19 @@ class App extends React.Component
     return
 
   render: ->
-    <div> 
-      <Accordion items={accordionItems} />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" render={
+          (props) =>
+            <Accordion
+              items={accordionItems}
+            />
+        } />
+        <Route exact path="/projects/mobile" render={
+          (props) =>
+            <PageMobile />
+        } />
+      </Switch>
+    </Router>
 
 ReactDOM.render <App />, $('div#app')[0]
