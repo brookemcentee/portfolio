@@ -39,6 +39,7 @@ class App extends React.Component
           (props) =>
             <Accordion
               items={accordionItems}
+              history={props.history}
             />
         } />
         <Route exact path="/projects/mobile" render={

@@ -61,6 +61,7 @@ class Accordion extends React.Component
                   index={i}
                   hideContent={@hideContent}
                   contentHidden={@state.contentHidden}
+                  history={@props.history}
                 />
             }
           </div>
@@ -93,7 +94,6 @@ class AccordionItem extends React.Component
     @state =
       isOpen: false
       expanded: false
-      expandComplete: false
     return
 
   open: =>
@@ -134,8 +134,7 @@ class AccordionItem extends React.Component
           node.animate
             height: '0px'
           , 300, =>
-            @setState
-              expandComplete: true
+            @props.history.push '/projects/mobile'
             return
           return
         return
@@ -146,14 +145,9 @@ class AccordionItem extends React.Component
       right: "#{@props.offset}px"
       background: @props.item.color
       zIndex: if not @state.expanded then (1500 + @props.index) else 1900
-    if @state.expandComplete
-      <Redirect to={{
-          pathname: '/projects/mobile'
-        }}
-      />
-    else
-      <div ref="item" className="accordion-item #{if @props.contentHidden and not @state.expanded then 'hidden' else ''}" style={itemStyle}> 
-        &nbsp;
-      </div>
+    
+    <div ref="item" className="accordion-item #{if @props.contentHidden and not @state.expanded then 'hidden' else ''}" style={itemStyle}> 
+      &nbsp;
+    </div>
 
 export default Accordion
