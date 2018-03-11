@@ -46,6 +46,26 @@ body {
   .full-height();
 }
 
+.about-page{
+  background: #CCC;
+}
+
+.about-image-background{
+  height: 100%;
+}
+
+.about-content-bg{
+  background: #FFF;
+}
+
+.about-content{
+  margin-top: 50px;
+}
+
+.about-content .content-section-title{
+  color: #000;
+}
+
 .accordion-title {
   color: #FFF;
   position: absolute;
@@ -98,9 +118,61 @@ body {
     &:last-child{
       margin-right: 0px;
     }
-    &:hover {
+    &:hover, &.active {
       color: #000000;
       text-decoration: underline;
     }
   }
+}
+
+.content-author{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #b6b6b6;
+  .sans-serif();
+}
+
+.content-header-title{
+  color: #64b6ac;
+  line-height: 75px;
+  font-size: 64px;
+  font-weight: bold;
+  .sans-serif();
+}
+
+.content-header-subtitle{
+  color: #64b6ac;
+  height: 42px;
+  font-size: 36px;
+  font-style: italic;
+  .sans-serif();
+  margin-bottom: 50px;
+}
+
+.content-section{
+  margin-bottom: 30px;
+}
+
+.content-subsection{
+  margin-top: 20px;
+}
+
+.content-subsection-title{
+  .sans-serif();
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.content-section-title{
+  color: #64b6ac;
+  .sans-serif();
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.content-image{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }

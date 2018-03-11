@@ -72,7 +72,10 @@ class Accordion extends React.Component
         </div>
       </div>
       <div className="col-md-5 #{if @state.contentHidden then 'hidden' else ''}">
-        <Navigation />
+        <Navigation
+          history={@props.history}
+          active="work"
+        />
         <div className="accordion-links">
           {
             @props.items.map (item, i) =>

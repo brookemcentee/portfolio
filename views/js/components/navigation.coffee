@@ -10,12 +10,16 @@ class Navigation extends React.Component
     @state = {}
     return
 
+  gotoPage: (url) =>
+    @props.history.push url
+    return
+
   render: ->
     <div className="navigation">
-      <a href="javascript:;">
+      <a onClick={@gotoPage.bind @, '/'} className="#{if @props.active is 'work' then 'active' else ''}" href="javascript:;">
         work
       </a>
-      <a href="javascript:;">
+      <a onClick={@gotoPage.bind @, '/about'} className="#{if @props.active is 'about' then 'active' else ''}" href="javascript:;">
         about
       </a>
     </div>

@@ -4,6 +4,7 @@ import $ from 'jquery'
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
 
 import Accordion from './components/accordion'
+import About from './components/about'
 
 import PageMobile from './pages/mobile'
 
@@ -42,9 +43,13 @@ class App extends React.Component
               history={props.history}
             />
         } />
+        <Route exact path="/about" render={
+          (props) =>
+            <About history={props.history} />
+        } />
         <Route exact path="/projects/mobile" render={
           (props) =>
-            <PageMobile />
+            <PageMobile history={props.history} />
         } />
       </Switch>
     </Router>
