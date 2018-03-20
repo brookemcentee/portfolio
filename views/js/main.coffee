@@ -7,14 +7,17 @@ import Accordion from './components/accordion'
 import About from './components/about'
 
 import PageMobile from './pages/mobile'
+import PageTasks from './pages/tasks'
+import PageBasketball from './pages/basketball'
+import PageUdine from './pages/udine'
 
 accordionItems = [
   key: 'mobile'
   name: 'Mobile'
   color: '#28666E'
 ,
-  key: 'scholarships'
-  name: 'Scholarships'
+  key: 'tasks'
+  name: 'Tasks'
   color: '#64B6AC'
 ,
   key: 'basketball'
@@ -50,6 +53,18 @@ class App extends React.Component
         <Route exact path="/projects/mobile" render={
           (props) =>
             <PageMobile history={props.history} />
+        } />
+        <Route exact path="/projects/tasks" render={
+          (props) =>
+            <PageTasks history={props.history} />
+        } />
+        <Route exact path="/projects/basketball" render={
+          (props) =>
+            <PageBasketball history={props.history} />
+        } />
+        <Route exact path="/projects/udine" render={
+          (props) =>
+            <PageUdine history={props.history} />
         } />
       </Switch>
     </Router>

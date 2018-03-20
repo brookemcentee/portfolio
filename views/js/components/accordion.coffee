@@ -142,7 +142,7 @@ class AccordionItem extends React.Component
           node.animate
             height: '0px'
           , 300, =>
-            @props.history.push '/projects/mobile'
+            @props.history.push '/projects/' + @props.item.key
             return
           return
         return
