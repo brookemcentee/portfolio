@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 import $ from 'jquery'
 
 import Page from '../components/page'
-import { Header, Paragraph, Subsection, Image } from '../components/content'
+import { Header, Paragraph, Subsection, Image, Images } from '../components/content'
 
 class PageMobile extends React.Component 
 
@@ -58,6 +58,13 @@ class PageMobile extends React.Component
           When tasks are started, they change from blue to orange, indicating that the task requires more action. Once it is marked complete, the task becomes green, sending the student positive feedback. As tasks are completed, the overall progress circles in the sidebar dynamically fill up with color. These color changes are stimulating to the user, and provide incentive for the student to continue completing tasks.
         </Subsection>
       </Paragraph>
+      <Images
+        images={['/images/sample-double.png', '/images/sample-double.png']}
+      />
+      <Images
+        images={['/images/sample-triple.png', '/images/sample-triple.png', '/images/sample-triple.png']}
+        background="#f2f2f2"
+      />
     </Page>
 
 export default PageMobile

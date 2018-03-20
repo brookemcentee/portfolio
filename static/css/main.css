@@ -2069,3 +2069,14 @@ body {
   margin-top: 20px;
   margin-bottom: 50px;
 }
+.content-image img {
+  width: 100%;
+}
+.content-images {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.content-images img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

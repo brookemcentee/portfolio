@@ -80,4 +80,26 @@ class Image extends React.Component
       <img src={@props.src} />
     </div>
 
-export {Header, Paragraph, Subsection, Image}
+class Images extends React.Component 
+
+  constructor: (props) ->
+    super props
+    @state = {}
+    return
+
+  render: ->
+    <div className="content-images" style={background: if @props.background then @props.background else 'inherit'}>
+      <div className="container">
+        <div className="row">
+          {
+            @props.images.map (image) =>
+              <img
+                className="col-sm-#{12 / @props.images.length} col-xs-12"
+                src={image}
+              />
+          }
+        </div>
+      </div>
+    </div>
+
+export {Header, Paragraph, Subsection, Image, Images}
