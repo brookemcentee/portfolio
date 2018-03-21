@@ -14,7 +14,7 @@ class PageMobile extends React.Component
     return
 
   render: ->
-    <Page history={@props.history}>
+    <Page name="mobile" history={@props.history}>
       <Header
         title="Mobile"
         subtitle="– ui/ux design"

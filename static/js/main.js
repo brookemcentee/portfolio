@@ -11363,7 +11363,12 @@ var locationsAreEqual = function locationsAreEqual(a, b) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navigation__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
-var Page;
+var Page,
+    boundMethodCheck = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new Error('Bound instance method accessed before binding');
+  }
+};
 
 
 
@@ -11376,14 +11381,20 @@ var Page;
 Page = class Page extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   constructor(props) {
     super(props);
+    this.gotoPage = this.gotoPage.bind(this);
     this.state = {};
     return;
+  }
+
+  gotoPage(url) {
+    boundMethodCheck(this, Page);
+    this.props.history.push(url);
   }
 
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
-      { className: 'page' },
+      { id: `page-${this.props.name}`, className: 'page' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'container' },
@@ -11396,7 +11407,11 @@ Page = class Page extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
               { className: 'content-author' },
-              'brooke mcentee'
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'a',
+                { onClick: this.gotoPage.bind(this, '/'), href: 'javascript:;' },
+                'brooke mcentee'
+              )
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -11568,8 +11583,12 @@ Images = class Images extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           { className: 'row' },
-          this.props.images.map(image => {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: `col-sm-${12 / this.props.images.length} col-xs-12`, src: image });
+          this.props.images.map((image, i) => {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { key: i, className: `col-sm-${12 / this.props.images.length} col-xs-12` },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'img-float', src: image })
+            );
           })
         )
       )
@@ -34435,7 +34454,7 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__components_page__["a" /* default */],
-      { history: this.props.history },
+      { name: 'mobile', history: this.props.history },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["a" /* Header */], { title: 'Mobile', subtitle: '\u2013 ui/ux design' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
@@ -34535,7 +34554,7 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__components_page__["a" /* default */],
-      { history: this.props.history },
+      { name: 'tasks', history: this.props.history },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["a" /* Header */], { title: 'Tasks', subtitle: '\u2013 ui/ux design' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
@@ -34638,7 +34657,7 @@ PageBasketball = class PageBasketball extends __WEBPACK_IMPORTED_MODULE_0_react_
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__components_page__["a" /* default */],
-      { history: this.props.history },
+      { name: 'basketball', history: this.props.history },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["a" /* Header */], { title: 'Basketball Academy', subtitle: '\u2013 information architecture' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
@@ -34769,7 +34788,7 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__components_page__["a" /* default */],
-      { history: this.props.history },
+      { name: 'udine', history: this.props.history },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["a" /* Header */], { title: 'UDine', subtitle: '\u2013 ux design/research' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],

@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 import $ from 'jquery'
 
 import Page from '../components/page'
-import { Header, Paragraph, Subsection, Image } from '../components/content'
+import { Header, Paragraph, Subsection, Image, Images } from '../components/content'
 
 class PageUdine extends React.Component 
 
@@ -14,7 +14,7 @@ class PageUdine extends React.Component
     return
 
   render: ->
-    <Page history={@props.history}>
+    <Page name="udine" history={@props.history}>
       <Header
         title="UDine"
         subtitle="– ux design/research"

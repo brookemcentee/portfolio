@@ -1949,6 +1949,14 @@ body {
 .full-height {
   height: 100vh;
 }
+.img-float {
+  max-width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.img-float:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
 .container-fluid.no-padding {
   padding: 0;
 }
@@ -2028,23 +2036,47 @@ body {
 .content-author {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.content-author a {
   color: #b6b6b6;
   font-family: 'Karla', sans-serif;
 }
+.content-author a:hover {
+  color: #000;
+  text-decoration: none;
+}
 .content-header-title {
-  color: #64b6ac;
   line-height: 75px;
   font-size: 64px;
   font-weight: bold;
   font-family: 'Karla', sans-serif;
 }
 .content-header-subtitle {
-  color: #64b6ac;
   height: 42px;
   font-size: 36px;
   font-style: italic;
   font-family: 'Karla', sans-serif;
   margin-bottom: 50px;
+}
+#page-mobile .content-header-title,
+#page-mobile .content-header-subtitle,
+#page-mobile .content-section-title {
+  color: #28666e;
+}
+#page-tasks .content-header-title,
+#page-tasks .content-header-subtitle,
+#page-tasks .content-section-title {
+  color: #64b6ac;
+}
+#page-basketball .content-header-title,
+#page-basketball .content-header-subtitle,
+#page-basketball .content-section-title {
+  color: #f6ae2d;
+}
+#page-udine .content-header-title,
+#page-udine .content-header-subtitle,
+#page-udine .content-section-title {
+  color: #dc9596;
 }
 .content-section {
   margin-bottom: 30px;
@@ -2058,7 +2090,6 @@ body {
   text-transform: uppercase;
 }
 .content-section-title {
-  color: #64b6ac;
   font-family: 'Karla', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -2073,10 +2104,11 @@ body {
   width: 100%;
 }
 .content-images {
+  width: 100%;
   margin-bottom: 30px;
   text-align: center;
 }
 .content-images img {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

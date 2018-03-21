@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 import $ from 'jquery'
 
 import Page from '../components/page'
-import { Header, Paragraph, Subsection, Image } from '../components/content'
+import { Header, Paragraph, Subsection, Image, Images } from '../components/content'
 
 class PageTasks extends React.Component 
 
@@ -14,7 +14,7 @@ class PageTasks extends React.Component
     return
 
   render: ->
-    <Page history={@props.history}>
+    <Page name="tasks" history={@props.history}>
       <Header
         title="Tasks"
         subtitle="– ui/ux design"

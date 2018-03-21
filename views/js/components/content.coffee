@@ -92,11 +92,13 @@ class Images extends React.Component
       <div className="container">
         <div className="row">
           {
-            @props.images.map (image) =>
-              <img
-                className="col-sm-#{12 / @props.images.length} col-xs-12"
-                src={image}
-              />
+            @props.images.map (image, i) =>
+              <div key={i} className="col-sm-#{12 / @props.images.length} col-xs-12">
+                <img
+                  className="img-float"
+                  src={image}
+                />
+              </div>
           }
         </div>
       </div>
