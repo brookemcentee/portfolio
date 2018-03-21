@@ -11382,6 +11382,8 @@ Page = class Page extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
   constructor(props) {
     super(props);
     this.gotoPage = this.gotoPage.bind(this);
+    this.gotoLast = this.gotoLast.bind(this);
+    this.gotoNext = this.gotoNext.bind(this);
     this.state = {};
     return;
   }
@@ -11391,13 +11393,53 @@ Page = class Page extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
     this.props.history.push(url);
   }
 
+  gotoLast() {
+    var i, item, j, len, name, nextItem, nextItemIndex, ref;
+    boundMethodCheck(this, Page);
+    name = this.props.name;
+    nextItemIndex = 0;
+    ref = this.props.items;
+    for (i = j = 0, len = ref.length; j < len; i = ++j) {
+      item = ref[i];
+      if (item.key === name) {
+        nextItemIndex = i - 1;
+        if (nextItemIndex < 0) {
+          nextItemIndex = this.props.items.length - 1;
+        }
+      }
+    }
+    nextItem = this.props.items[nextItemIndex];
+    this.gotoPage('/projects/' + nextItem.key);
+    window.scrollTo(0, 0);
+  }
+
+  gotoNext() {
+    var i, item, j, len, name, nextItem, nextItemIndex, ref;
+    boundMethodCheck(this, Page);
+    name = this.props.name;
+    nextItemIndex = 0;
+    ref = this.props.items;
+    for (i = j = 0, len = ref.length; j < len; i = ++j) {
+      item = ref[i];
+      if (item.key === name) {
+        nextItemIndex = i + 1;
+        if (nextItemIndex >= this.props.items.length) {
+          nextItemIndex = 0;
+        }
+      }
+    }
+    nextItem = this.props.items[nextItemIndex];
+    this.gotoPage('/projects/' + nextItem.key);
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       { id: `page-${this.props.name}`, className: 'page' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'container' },
+        { className: 'container-fluid' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           { className: 'row' },
@@ -11421,7 +11463,38 @@ Page = class Page extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
           )
         )
       ),
-      this.props.children
+      this.props.children,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'container-fluid' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'row footer' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'col-md-7' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'a',
+              { onClick: this.gotoPage.bind(this, '/'), href: 'javascript:;' },
+              'brooke mcentee'
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'col-md-5 footer-pages' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'a',
+              { href: 'javascript:;', onClick: this.gotoLast.bind(this) },
+              'last'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'a',
+              { href: 'javascript:;', onClick: this.gotoNext.bind(this) },
+              'next'
+            )
+          )
+        )
+      )
     );
   }
 
@@ -13173,16 +13246,16 @@ App = class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_about__["a" /* default */], { history: props.history });
           } }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Route */], { exact: true, path: '/projects/mobile', render: props => {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__pages_mobile__["a" /* default */], { history: props.history });
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__pages_mobile__["a" /* default */], { history: props.history, items: accordionItems });
           } }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Route */], { exact: true, path: '/projects/tasks', render: props => {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__pages_tasks__["a" /* default */], { history: props.history });
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__pages_tasks__["a" /* default */], { history: props.history, items: accordionItems });
           } }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Route */], { exact: true, path: '/projects/basketball', render: props => {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__pages_basketball__["a" /* default */], { history: props.history });
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__pages_basketball__["a" /* default */], { history: props.history, items: accordionItems });
           } }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Route */], { exact: true, path: '/projects/udine', render: props => {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__pages_udine__["a" /* default */], { history: props.history });
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__pages_udine__["a" /* default */], { history: props.history, items: accordionItems });
           } })
       )
     );
@@ -34343,27 +34416,31 @@ About = class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
       { className: 'container-fluid no-padding about-page' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'col-sm-7 about-image-background' },
+        { className: 'col-md-7' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          { className: 'accordion-title' },
+          { className: 'about-image-background' },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: 'accordion-title-header' },
-            'Brooke',
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-            'McEntee'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'accordion-title-subheader' },
-            '\u2013 ui/ux designer'
+            { className: 'accordion-title' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'accordion-title-header' },
+              'Brooke',
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+              'McEntee'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'accordion-title-subheader' },
+              '\u2013 ui/ux designer'
+            )
           )
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'col-sm-5 about-content-bg' },
+        { className: 'col-md-5 about-content-bg' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__navigation__["a" /* default */], { history: this.props.history, active: 'about' }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
@@ -34454,7 +34531,7 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__components_page__["a" /* default */],
-      { name: 'mobile', history: this.props.history },
+      { name: 'mobile', items: this.props.items, history: this.props.history },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["a" /* Header */], { title: 'Mobile', subtitle: '\u2013 ui/ux design' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
@@ -34554,7 +34631,7 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__components_page__["a" /* default */],
-      { name: 'tasks', history: this.props.history },
+      { name: 'tasks', items: this.props.items, history: this.props.history },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["a" /* Header */], { title: 'Tasks', subtitle: '\u2013 ui/ux design' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
@@ -34659,7 +34736,7 @@ PageBasketball = class PageBasketball extends __WEBPACK_IMPORTED_MODULE_0_react_
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__components_page__["a" /* default */],
-      { name: 'basketball', history: this.props.history },
+      { name: 'basketball', items: this.props.items, history: this.props.history },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["a" /* Header */], { title: 'Basketball Academy', subtitle: '\u2013 information architecture' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
@@ -34790,7 +34867,7 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__components_page__["a" /* default */],
-      { name: 'udine', history: this.props.history },
+      { name: 'udine', items: this.props.items, history: this.props.history },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["a" /* Header */], { title: 'UDine', subtitle: '\u2013 ux design/research' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],

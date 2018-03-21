@@ -14,7 +14,7 @@ class PageBasketball extends React.Component
     return
 
   render: ->
-    <Page name="basketball" history={@props.history}>
+    <Page name="basketball" items={@props.items} history={@props.history}>
       <Header
         title="Basketball Academy"
         subtitle="– information architecture"

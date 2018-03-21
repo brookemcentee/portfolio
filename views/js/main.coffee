@@ -52,19 +52,31 @@ class App extends React.Component
         } />
         <Route exact path="/projects/mobile" render={
           (props) =>
-            <PageMobile history={props.history} />
+            <PageMobile
+              history={props.history}
+              items={accordionItems}
+            />
         } />
         <Route exact path="/projects/tasks" render={
           (props) =>
-            <PageTasks history={props.history} />
+            <PageTasks
+              history={props.history}
+              items={accordionItems}
+            />
         } />
         <Route exact path="/projects/basketball" render={
           (props) =>
-            <PageBasketball history={props.history} />
+            <PageBasketball
+              history={props.history}
+              items={accordionItems}
+            />
         } />
         <Route exact path="/projects/udine" render={
           (props) =>
-            <PageUdine history={props.history} />
+            <PageUdine
+              history={props.history}
+              items={accordionItems}
+            />
         } />
       </Switch>
     </Router>

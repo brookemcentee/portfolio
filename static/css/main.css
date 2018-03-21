@@ -1969,6 +1969,11 @@ body {
 .about-image-background {
   height: 100%;
 }
+@media (min-width: 992px) {
+  .about-image-background {
+    position: fixed;
+  }
+}
 .about-content-bg {
   background: #FFF;
 }
@@ -2111,4 +2116,22 @@ body {
 .content-images img {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer a {
+  font-family: 'Karla', sans-serif;
+  color: #b6b6b6;
+}
+.footer a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.footer-pages a {
+  margin-right: 50px;
+}
+.footer-pages a:hover {
+  text-decoration: underline;
 }
