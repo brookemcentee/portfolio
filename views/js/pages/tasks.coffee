@@ -58,6 +58,12 @@ class PageTasks extends React.Component
           When tasks are started, they change from blue to orange, indicating that the task requires more action. Once it is marked complete, the task becomes green, sending the student positive feedback. As tasks are completed, the overall progress circles in the sidebar dynamically fill up with color. These color changes are stimulating to the user, and provide incentive for the student to continue completing tasks.
         </Subsection>
       </Paragraph>
+      <Images
+        images={['/images/tasks-two.svg', '/images/tasks-three.svg']}
+      />
+      <Images
+        images={['/images/tasks-four.png', '/images/tasks-five.png', '/images/tasks-six.png']}
+      />
       <Paragraph
         title="development"
       >
