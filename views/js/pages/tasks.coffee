@@ -14,7 +14,7 @@ class PageTasks extends React.Component
     return
 
   render: ->
-    <Page name="tasks" history={@props.history}>
+    <Page name="tasks" items={@props.items} history={@props.history}>
       <Header
         title="Tasks"
         subtitle="– ui/ux design"

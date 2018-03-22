@@ -9,17 +9,19 @@ class About extends React.Component
 
   render: ->
     <div className="container-fluid no-padding about-page">
-      <div className="col-sm-7 about-image-background">
-        <div className="accordion-title">
-          <div className="accordion-title-header">
-            Brooke<br />McEntee
-          </div>
-          <div className="accordion-title-subheader">
-            – ui/ux designer
+      <div className="col-md-7">
+        <div className="about-image-background">
+          <div className="accordion-title">
+            <div className="accordion-title-header">
+              Brooke<br />McEntee
+            </div>
+            <div className="accordion-title-subheader">
+              – ui/ux designer
+            </div>
           </div>
         </div>
       </div>
-      <div className="col-sm-5 about-content-bg">
+      <div className="col-md-5 about-content-bg">
         <Navigation
           history={@props.history}
           active="about"

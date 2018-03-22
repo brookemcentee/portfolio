@@ -14,7 +14,7 @@ class PageUdine extends React.Component
     return
 
   render: ->
-    <Page name="udine" history={@props.history}>
+    <Page name="udine" items={@props.items} history={@props.history}>
       <Header
         title="UDine"
         subtitle="– ux design/research"

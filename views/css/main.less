@@ -63,6 +63,12 @@ body {
   height: 100%;
 }
 
+@media (min-width: @screen-md) {
+  .about-image-background{
+    position: fixed;
+  }
+}
+
 .about-content-bg{
   background: #FFF;
 }
@@ -223,5 +229,27 @@ body {
   img {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+}
+
+.footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  a {
+    .sans-serif();
+    color: #b6b6b6;
+    &:hover{
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
+
+.footer-pages{
+  a {
+    margin-right: 50px;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
