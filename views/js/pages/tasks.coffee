@@ -34,8 +34,37 @@ class PageTasks extends React.Component
           <div>4. Development</div>
         </div>
       </Paragraph>
+      <Paragraph
+        title="requirements"
+      >
+        The previous version of student tasks had poor usability due to a lack of hierarchy and visual interest. I worked to ensure our new version fixed these issues, without sacrificing any of its strengths. My team and I brainstormed features and interactions that were needed, and prioritized those in conjunction with opportunities for improvement. From there, I created user stories to ensure full understanding of the updated functionality and our target user.
+      </Paragraph>
       <Image
         src="/images/tasks-one.svg"
+      />
+      <Paragraph
+        title="sketches"
+      >
+        With user stories and requirements in hand, I took to sketching in order to visualize the page layout.
+        <Subsection
+          title="components"
+        >
+          The tasks page is loaded with information and students tend to skim through this content quickly. In order to avoid information overload and allow students to immediately digest and engage with the content, I decided to implement a card-based interface. Users can easily scan through many cards to find relevant tasks, without feeling overwhelmed.
+        </Subsection>
+        <Subsection
+          title="hierarchy"
+        >
+          After collecting a content inventory of all information and actions on the page, I separated high priority actions and information from the lower priority. By sketching collapsed tasks alongside tasks with fully expanded details, I established the visual hierarchy of the page. The important information was placed into the collapsed state, with all other content placed into the expanded state.
+        </Subsection>
+        <Subsection
+          title="progress"
+        >
+          After building the layout of the task components, I needed make task progress extremely clear for the users, as this is one of the most important heuristics for this page. Through the use of color coding and iconography, I was able to display the status of each task in a simple and intuitive way.
+        </Subsection>
+      </Paragraph>
+      <Images
+        images={['/images/tasks-eight.png', '/images/tasks-seven.png']}
+        background="#f2f2f2"
       />
       <Paragraph
         title="mockups"
@@ -51,7 +80,6 @@ class PageTasks extends React.Component
         >
           Although this page holds a lot of information, I wanted to highlight the most relevant content for the user. Dates, progress and task type were the most important elements, so those are always shown. Task details, associated links, attachments and notes are hidden as to not overwhelm the student. The main call-to-action, the start/complete button, is always prominent.
         </Subsection>
-
         <Subsection
           title="color"
         >
@@ -63,6 +91,7 @@ class PageTasks extends React.Component
       />
       <Images
         images={['/images/tasks-four.png', '/images/tasks-five.png', '/images/tasks-six.png']}
+        background="#f2f2f2"
       />
       <Paragraph
         title="development"

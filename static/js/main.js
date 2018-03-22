@@ -34589,7 +34589,33 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
           )
         )
       ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
+        { title: 'requirements' },
+        'The previous version of student tasks had poor usability due to a lack of hierarchy and visual interest. I worked to ensure our new version fixed these issues, without sacrificing any of its strengths. My team and I brainstormed features and interactions that were needed, and prioritized those in conjunction with opportunities for improvement. From there, I created user stories to ensure full understanding of the updated functionality and our target user.'
+      ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["b" /* Image */], { src: '/images/tasks-one.svg' }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
+        { title: 'sketches' },
+        'With user stories and requirements in hand, I took to sketching in order to visualize the page layout.',
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
+          { title: 'components' },
+          'The tasks page is loaded with information and students tend to skim through this content quickly. In order to avoid information overload and allow students to immediately digest and engage with the content, I decided to implement a card-based interface. Users can easily scan through many cards to find relevant tasks, without feeling overwhelmed.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
+          { title: 'hierarchy' },
+          'After collecting a content inventory of all information and actions on the page, I separated high priority actions and information from the lower priority. By sketching collapsed tasks alongside tasks with fully expanded details, I established the visual hierarchy of the page. The important information was placed into the collapsed state, with all other content placed into the expanded state.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
+          { title: 'progress' },
+          'After building the layout of the task components, I needed make task progress extremely clear for the users, as this is one of the most important heuristics for this page. Through the use of color coding and iconography, I was able to display the status of each task in a simple and intuitive way.'
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-eight.png', '/images/tasks-seven.png'], background: '#f2f2f2' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'mockups' },
@@ -34611,7 +34637,7 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-two.svg', '/images/tasks-three.svg'] }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-four.png', '/images/tasks-five.png', '/images/tasks-six.png'] }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-four.png', '/images/tasks-five.png', '/images/tasks-six.png'], background: '#f2f2f2' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'development' },
