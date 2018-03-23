@@ -35,9 +35,6 @@ class PageUdine extends React.Component
           <div>5. Prototype</div>
         </div>
       </Paragraph>
-      <Image
-        src="/images/tasks-one.svg"
-      />
       <Paragraph
         title="research"
       >
@@ -60,6 +57,11 @@ class PageUdine extends React.Component
       >
         My group members and I used all of our research, insights, user stories and more to create a site map for UDine.
       </Paragraph>
+      <Images
+        images={['/images/udine-sitemap-1.jpg']}
+        background="#f2f2f2"
+        noShadow
+      />
       <Paragraph
         title="prototype"
       >

@@ -22,49 +22,44 @@ class PageMobile extends React.Component
       <Paragraph
         title="challenge"
       >
-        Tasks are the most important part of the student experience on NextTier. Therefore, we need a robust feature that clearly highlights relevant tasks, while also communicating task status and action items. My challenge was to improve the student tasks experience based on one year of user feedback by creating attractive, familiar and easy to use UI components.
+        The student-facing mobile app required a complete facelift. After trashing the old app plagued with inconsistency and outdated design paradigms, our work was cut out for us. We challenged ourselves to think backward, a concept I learned about at a design conference just before starting this project. We started with our end goal, a perfectly smooth mobile experience, and then worked backward to figure out what we needed to do/implement to make that ideal experience a reality.
       </Paragraph>
       <Paragraph
         title="process"
       >
         <div className="ordered-list">
-          <div>1. Requirements</div>
-          <div>2. Sketches</div>
-          <div>3. Mockups</div>
-          <div>4. Development</div>
+          <div>1. Brainstorming</div>
+          <div>2. Requirements</div>
+          <div>3. Wireframes</div>
+          <div>4. Mockups</div>
+          <div>5. Development</div>
         </div>
       </Paragraph>
-      <Image
-        src="/images/tasks-one.svg"
-      />
+      <Paragraph
+        title="brainstorming"
+      >
+        Because we were starting from scratch, brainstorming was an essential part of this project. I took the lead on brainstorming and planned out a week of structured two-hour sessions. Each session had a theme to ensure focus and included both solo and collaborative brainstorming.
+      </Paragraph>
+      <Paragraph
+        title="requirements"
+      >
+        Our tight two-month timeline meant that we had to strictly prioritize our most impactful ideas which, in turn, allowed us to focus on creating an elegant app with a few essential new features. The most impactful design requirements were based on simplification, customization, and optimization.
+      </Paragraph>
+      <Paragraph
+        title="wireframes"
+      >
+        I spent the first week of the project in Balsamiq creating wireframes. Focusing on simplicity and clarity, I was able to get a feel for the navigation and components that would make up the majority of the app. At the end of the week, I held a design review where I received the necessary feedback to move on to mockups.
+      </Paragraph>
       <Paragraph
         title="mockups"
       >
-        Illustrator is where my ideas and sketches come to life. I perfected the visual elements and created design consistency.
-        <Subsection
-          title="pattern"
-        >
-          Circles indicating progress are always on the left of its corresponding content. I made this a clear and intentional design paradigm to ensure that student users know where to look and what to look for when searching for their progress per task and per each group of tasks.
-        </Subsection>
-        <Subsection
-          title="visibility"
-        >
-          Although this page holds a lot of information, I wanted to highlight the most relevant content for the user. Dates, progress and task type were the most important elements, so those are always shown. Task details, associated links, attachments and notes are hidden as to not overwhelm the student. The main call-to-action, the start/complete button, is always prominent.
-        </Subsection>
-
-        <Subsection
-          title="color"
-        >
-          When tasks are started, they change from blue to orange, indicating that the task requires more action. Once it is marked complete, the task becomes green, sending the student positive feedback. As tasks are completed, the overall progress circles in the sidebar dynamically fill up with color. These color changes are stimulating to the user, and provide incentive for the student to continue completing tasks.
-        </Subsection>
+        Using Sketch, I created mockups.
       </Paragraph>
-      <Images
-        images={['/images/sample-double.png', '/images/sample-double.png']}
-      />
-      <Images
-        images={['/images/sample-triple.png', '/images/sample-triple.png', '/images/sample-triple.png']}
-        background="#f2f2f2"
-      />
+      <Paragraph
+        title="development"
+      >
+        Worked cross-functionally with 1 project lead, 2 FE devs and 1 BE dev
+      </Paragraph>
     </Page>
 
 export default PageMobile

@@ -37,9 +37,6 @@ class PageBasketball extends React.Component
           <div>7. Wireframe</div>
         </div>
       </Paragraph>
-      <Image
-        src="/images/tasks-one.svg"
-      />
       <Paragraph
         title="ideation"
       >
@@ -65,11 +62,23 @@ class PageBasketball extends React.Component
       >
         I took the role of creating the site map. For the first iteration of the site map, I sketched out what the organization of the website might look like. After analyzing the card sort results, I had a better idea of the organization of the website and ensured that the final iteration of the site map reflected the results and recommendations pulled from our card sort analysis. I used draw.io, a Google Drive plugin to create the site map.
       </Paragraph>
+      <Images
+        images={['/images/basketball-one.jpg']}
+        background="#f2f2f2"
+        noShadow
+      />
       <Paragraph
         title="sketches"
       >
         Sketches were a group effort.
       </Paragraph>
+      <Images
+        images={['/images/basketball-sketches-1.jpg', '/images/basketball-sketches-2.jpg', '/images/basketball-sketches-3.jpg']}
+      />
+      <Images
+        images={['/images/basketball-sketches-4.jpg', '/images/basketball-sketches-5.jpg']}
+        background="#f2f2f2"
+      />
       <Paragraph
         title="solution"
       >

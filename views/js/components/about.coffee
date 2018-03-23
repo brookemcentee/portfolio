@@ -28,30 +28,29 @@ class About extends React.Component
         />
         <div className="about-content">
           <div className="content-section">
-            <div className="content-section-title">
-              who
-            </div>
-            I’m Brooke McEntee. If you’d like to skip the next four W’s and get right to my resume and LinkedIn, feel free. If you get to the end of all five W’s and want to know more, send me an email.
-          </div>
-          <div className="content-section">
-            <div className="content-section-title">
-              what, why
-            </div>
             It was always my dream to become an architect.
             <br /><br />
             At a young age, what drew me to architecture was the creative process involved: Understanding who you are building for and what they will do in the space you build. Designing, gathering feedback and iterating on your designs until something works.
             <br /><br />
-            I didn’t realize until my first Introduction to Architecture lecture that designing buildings was not my calling.
+            I didn’t realize until 30 minutes into my first Introduction to Architecture lecture that designing buildings was not my calling.
             <br /><br />
-            Today, I am following my dream. As a user experience designer, I am an architect because I am understanding my users and their goals. I am observing and adjusting based on user feedback. As a user interface designer, I am an architect because I am bringing my visions to life. I am creating, writing, and presenting.
+            Thankfully, I don't need to be designing buildings to follow my dream.
+            <br /><br />
+            As a user experience designer, I am an architect because I am understanding my users and their goals. I am observing and adjusting based on user feedback. As a user interface designer, I am an architect because I am bringing my visions to life. I am creating, writing, and presenting.
           </div>
+          <hr />
           <div className="content-section">
-            <div className="content-section-title">
-              where, when
-            </div>
-              I was born and raised in Chagrin Falls, Ohio and have a strong connection to the Metroparks and Cleveland sports. My early 20s were spent in Chicago, Illinois spending far too much on the best new restaurants. Much unlike my six months of life in Lyon, France, the gastronomic capital of the world, when all I could afford was a baguette a day. 
-              <br /><br />
-              Today, I live in St. Louis, Missouri with my boyfriend and our rescue dog, Maisy. Most of my free time is spent in biking through Forest Park, testing a new recipe, or dipping my toes into interior design. I also love to travel; I was most recently in Bend, Oregon skiing Mount Bachelor.
+            I was born and raised in Chagrin Falls, Ohio and have a strong connection to the Metroparks and Cleveland sports. My early 20s were spent in Chicago, Illinois spending far too much on the best new restaurants. Much unlike my six months of life in Lyon, France, the gastronomic capital of the world, when all I could afford was a baguette a day. 
+            <br /><br />
+            Today, I live in St. Louis, Missouri with my boyfriend and our rescue dog, Maisy. Most of my free time is spent in biking through Forest Park, testing a new recipe, or dipping my toes into interior design. I also love to travel; I was most recently in Bend, Oregon skiing Mount Bachelor.
+          </div>
+          <hr />
+          <div className="content-section">
+            <a href="/pdfs/brooke-mcentee-resume-2018.pdf" target="_blank">resume</a>
+            <br />
+            <a href="http://www.linkedin.com/in/brookemcentee" target="_blank">linkedin</a>
+            <br />
+            <a href="mailto:brookemc12@gmail.com" target="_blank">email</a>
           </div>
         </div>
       </div>

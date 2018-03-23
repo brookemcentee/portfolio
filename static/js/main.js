@@ -34448,44 +34448,50 @@ About = class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { className: 'content-section' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'content-section-title' },
-              'who'
-            ),
-            'I\u2019m Brooke McEntee. If you\u2019d like to skip the next four W\u2019s and get right to my resume and LinkedIn, feel free. If you get to the end of all five W\u2019s and want to know more, send me an email.'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'content-section' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'content-section-title' },
-              'what, why'
-            ),
             'It was always my dream to become an architect.',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             'At a young age, what drew me to architecture was the creative process involved: Understanding who you are building for and what they will do in the space you build. Designing, gathering feedback and iterating on your designs until something works.',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-            'I didn\u2019t realize until my first Introduction to Architecture lecture that designing buildings was not my calling.',
+            'I didn\u2019t realize until 30 minutes into my first Introduction to Architecture lecture that designing buildings was not my calling.',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-            'Today, I am following my dream. As a user experience designer, I am an architect because I am understanding my users and their goals. I am observing and adjusting based on user feedback. As a user interface designer, I am an architect because I am bringing my visions to life. I am creating, writing, and presenting.'
+            'Thankfully, I don\'t need to be designing buildings to follow my dream.',
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+            'As a user experience designer, I am an architect because I am understanding my users and their goals. I am observing and adjusting based on user feedback. As a user interface designer, I am an architect because I am bringing my visions to life. I am creating, writing, and presenting.'
           ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('hr', null),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { className: 'content-section' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'content-section-title' },
-              'where, when'
-            ),
             'I was born and raised in Chagrin Falls, Ohio and have a strong connection to the Metroparks and Cleveland sports. My early 20s were spent in Chicago, Illinois spending far too much on the best new restaurants. Much unlike my six months of life in Lyon, France, the gastronomic capital of the world, when all I could afford was a baguette a day.',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             'Today, I live in St. Louis, Missouri with my boyfriend and our rescue dog, Maisy. Most of my free time is spent in biking through Forest Park, testing a new recipe, or dipping my toes into interior design. I also love to travel; I was most recently in Bend, Oregon skiing Mount Bachelor.'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('hr', null),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'content-section' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'a',
+              { href: '/pdfs/brooke-mcentee-resume-2018.pdf', target: '_blank' },
+              'resume'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'a',
+              { href: 'http://www.linkedin.com/in/brookemcentee', target: '_blank' },
+              'linkedin'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'a',
+              { href: 'mailto:brookemc12@gmail.com', target: '_blank' },
+              'email'
+            )
           )
         )
       )
@@ -34536,7 +34542,7 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'challenge' },
-        'Tasks are the most important part of the student experience on NextTier. Therefore, we need a robust feature that clearly highlights relevant tasks, while also communicating task status and action items. My challenge was to improve the student tasks experience based on one year of user feedback by creating attractive, familiar and easy to use UI components.'
+        'The student-facing mobile app required a complete facelift. After trashing the old app plagued with inconsistency and outdated design paradigms, our work was cut out for us. We challenged ourselves to think backward, a concept I learned about at a design conference just before starting this project. We started with our end goal, a perfectly smooth mobile experience, and then worked backward to figure out what we needed to do/implement to make that ideal experience a reality.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
@@ -34547,48 +34553,55 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             null,
-            '1. Requirements'
+            '1. Brainstorming'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             null,
-            '2. Sketches'
+            '2. Requirements'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             null,
-            '3. Mockups'
+            '3. Wireframes'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             null,
-            '4. Development'
+            '4. Mockups'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            null,
+            '5. Development'
           )
         )
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["b" /* Image */], { src: '/images/tasks-one.svg' }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
+        { title: 'brainstorming' },
+        'Because we were starting from scratch, brainstorming was an essential part of this project. I took the lead on brainstorming and planned out a week of structured two-hour sessions. Each session had a theme to ensure focus and included both solo and collaborative brainstorming.'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
+        { title: 'requirements' },
+        'Our tight two-month timeline meant that we had to strictly prioritize our most impactful ideas which, in turn, allowed us to focus on creating an elegant app with a few essential new features. The most impactful design requirements were based on simplification, customization, and optimization.'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
+        { title: 'wireframes' },
+        'I spent the first week of the project in Balsamiq creating wireframes. Focusing on simplicity and clarity, I was able to get a feel for the navigation and components that would make up the majority of the app. At the end of the week, I held a design review where I received the necessary feedback to move on to mockups.'
+      ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'mockups' },
-        'Illustrator is where my ideas and sketches come to life. I perfected the visual elements and created design consistency.',
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
-          { title: 'pattern' },
-          'Circles indicating progress are always on the left of its corresponding content. I made this a clear and intentional design paradigm to ensure that student users know where to look and what to look for when searching for their progress per task and per each group of tasks.'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
-          { title: 'visibility' },
-          'Although this page holds a lot of information, I wanted to highlight the most relevant content for the user. Dates, progress and task type were the most important elements, so those are always shown. Task details, associated links, attachments and notes are hidden as to not overwhelm the student. The main call-to-action, the start/complete button, is always prominent.'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
-          { title: 'color' },
-          'When tasks are started, they change from blue to orange, indicating that the task requires more action. Once it is marked complete, the task becomes green, sending the student positive feedback. As tasks are completed, the overall progress circles in the sidebar dynamically fill up with color. These color changes are stimulating to the user, and provide incentive for the student to continue completing tasks.'
-        )
+        'Using Sketch, I created mockups.'
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/sample-double.png', '/images/sample-double.png'] }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/sample-triple.png', '/images/sample-triple.png', '/images/sample-triple.png'], background: '#f2f2f2' })
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
+        { title: 'development' },
+        'Worked cross-functionally with 1 project lead, 2 FE devs and 1 BE dev'
+      )
     );
   }
 
@@ -34719,7 +34732,9 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'development' },
         'I worked cross-functionally with the back and front-end development teams to ensure the tasks page was developed as intended. By regularly checking in with the developers, I minimized miscommunication and prevented waste of development resources. We completed the entire feature redesign within a two-week development sprint.'
-      )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-before-one.png', '/images/tasks-after-one.png'] }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-before-two.png', '/images/tasks-after-two.png'] })
     );
   }
 
@@ -34812,7 +34827,6 @@ PageBasketball = class PageBasketball extends __WEBPACK_IMPORTED_MODULE_0_react_
           )
         )
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["b" /* Image */], { src: '/images/tasks-one.svg' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'ideation' },
@@ -34838,11 +34852,14 @@ PageBasketball = class PageBasketball extends __WEBPACK_IMPORTED_MODULE_0_react_
         { title: 'site map' },
         'I took the role of creating the site map. For the first iteration of the site map, I sketched out what the organization of the website might look like. After analyzing the card sort results, I had a better idea of the organization of the website and ensured that the final iteration of the site map reflected the results and recommendations pulled from our card sort analysis. I used draw.io, a Google Drive plugin to create the site map.'
       ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/basketball-one.jpg'], background: '#f2f2f2', noShadow: true }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'sketches' },
         'Sketches were a group effort.'
       ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/basketball-sketches-1.jpg', '/images/basketball-sketches-2.jpg', '/images/basketball-sketches-3.jpg'] }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/basketball-sketches-4.jpg', '/images/basketball-sketches-5.jpg'], background: '#f2f2f2' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'solution' },
@@ -34933,7 +34950,6 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
           )
         )
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["b" /* Image */], { src: '/images/tasks-one.svg' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'research' },
@@ -34957,6 +34973,7 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
         { title: 'site map' },
         'My group members and I used all of our research, insights, user stories and more to create a site map for UDine.'
       ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/udine-sitemap-1.jpg'], background: '#f2f2f2', noShadow: true }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'prototype' },

@@ -98,6 +98,12 @@ class PageTasks extends React.Component
       >
         I worked cross-functionally with the back and front-end development teams to ensure the tasks page was developed as intended. By regularly checking in with the developers, I minimized miscommunication and prevented waste of development resources. We completed the entire feature redesign within a two-week development sprint.
       </Paragraph>
+      <Images
+        images={['/images/tasks-before-one.png', '/images/tasks-after-one.png']}
+      />
+      <Images
+        images={['/images/tasks-before-two.png', '/images/tasks-after-two.png']}
+      />
     </Page>
 
 export default PageTasks
