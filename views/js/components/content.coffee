@@ -95,7 +95,7 @@ class Images extends React.Component
             @props.images.map (image, i) =>
               <div key={i} className="col-sm-#{12 / @props.images.length} col-xs-12">
                 <img
-                  className="img-float"
+                  className="#{if @props.noShadow then '' else 'img-float'}"
                   src={image}
                 />
               </div>
@@ -104,4 +104,38 @@ class Images extends React.Component
       </div>
     </div>
 
-export {Header, Paragraph, Subsection, Image, Images}
+class TextBoxes extends React.Component
+
+  constructor: (props) ->
+    super props
+    @state = {}
+    return
+
+  render: ->
+
+    <div className="container-fluid">
+      <div className="row">
+        {
+          @props.children.map (box, i) =>
+            <div key={i} className="col-sm-#{12 / @props.children.length} col-xs-12">
+              {box}
+            </div>
+        }
+      </div>
+    </div>
+
+class TextBox extends React.Component
+
+  constructor: (props) ->
+    super props
+    @state = {}
+    return
+
+  render: ->
+
+    <div className="text-box img-float">
+      <h4>{@props.title}</h4>
+      {@props.children}
+    </div>
+
+export {Header, Paragraph, Subsection, Image, Images, TextBoxes, TextBox}

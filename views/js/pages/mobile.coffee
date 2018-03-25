@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 import $ from 'jquery'
 
 import Page from '../components/page'
-import { Header, Paragraph, Subsection, Image, Images } from '../components/content'
+import { Header, Paragraph, Subsection, Image, Images, TextBoxes, TextBox } from '../components/content'
 
 class PageMobile extends React.Component 
 

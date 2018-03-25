@@ -44,7 +44,7 @@ class Page extends React.Component
 
   render: ->
     <div id="page-#{@props.name}" className="page">
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
           <div className="col-md-7">
             <div className="content-author">
@@ -62,7 +62,7 @@ class Page extends React.Component
         </div>
       </div>
       {@props.children}
-      <div className="container-fluid">
+      <div className="container">
         <div className="row footer">
           <div className="col-md-7">
             <a onClick={@gotoPage.bind @, '/'} href="javascript:;">

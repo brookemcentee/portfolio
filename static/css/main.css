@@ -1920,6 +1920,12 @@ body {
   font-family: 'Lora', serif;
   font-size: 16px;
 }
+a {
+  color: #333;
+}
+a:hover {
+  color: #333;
+}
 .sans-serif {
   font-family: 'Karla', sans-serif;
 }
@@ -2134,4 +2140,12 @@ body {
 }
 .footer-pages a:hover {
   text-decoration: underline;
+}
+.text-box {
+  background-color: #F2F2F2;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.list-text-box {
+  padding-left: 20px;
 }

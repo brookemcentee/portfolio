@@ -11439,7 +11439,7 @@ Page = class Page extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
       { id: `page-${this.props.name}`, className: 'page' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'container-fluid' },
+        { className: 'container' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           { className: 'row' },
@@ -11466,7 +11466,7 @@ Page = class Page extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
       this.props.children,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'container-fluid' },
+        { className: 'container' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           { className: 'row footer' },
@@ -11512,13 +11512,15 @@ Page = class Page extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Subsection; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Image; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Images; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return TextBoxes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return TextBox; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_jquery__);
-var Header, Image, Images, Paragraph, Subsection;
+var Header, Image, Images, Paragraph, Subsection, TextBox, TextBoxes;
 
 
 
@@ -11660,11 +11662,60 @@ Images = class Images extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
               { key: i, className: `col-sm-${12 / this.props.images.length} col-xs-12` },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'img-float', src: image })
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: `${this.props.noShadow ? '' : 'img-float'}`, src: image })
             );
           })
         )
       )
+    );
+  }
+
+};
+
+TextBoxes = class TextBoxes extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    return;
+  }
+
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'container-fluid' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'row' },
+        this.props.children.map((box, i) => {
+          return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { key: i, className: `col-sm-${12 / this.props.children.length} col-xs-12` },
+            box
+          );
+        })
+      )
+    );
+  }
+
+};
+
+TextBox = class TextBox extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    return;
+  }
+
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'text-box img-float' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'h4',
+        null,
+        this.props.title
+      ),
+      this.props.children
     );
   }
 
@@ -34964,9 +35015,132 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
         'We then collaborated to frame insights based on our user research that would inform our application\u2019s design. From our insights, we worked together to create design principles that would guide the intention and design of UDine. Concepts for UDine\u2019s features were then formulated as we had an idea of what UDine needed to offer in order to solve the problem at hand.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4__components_content__["g" /* TextBoxes */],
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_4__components_content__["f" /* TextBox */],
+          { title: 'INSIGHTS' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'ol',
+            { 'class': 'list-text-box' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Student\u2019s schedules determine where they dine.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'A typical student with a meal plan uses DDS 1-3 times per day.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Take-out is usually done with the dining area is too crowded or when dining alone.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Peak hours occur during lunch and dinner.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Line wait times increase quite dramatically during peak hours.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Students tend to get fast food or snacks during peak hours to avoid waiting in long lines.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Students trust DDS staff and find them to be friendly.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Students often use food ordering apps such as GrubHub and Seamless.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Students like GrubHub\u2019s convenient features such as menus, ETA, and in-app payment.'
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_4__components_content__["f" /* TextBox */],
+          { title: 'DESIGN PRINCIPLES' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'ol',
+            { 'class': 'list-text-box' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Allow users to quickly choose which campus dining location they will be ordering from.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Facilitate quick and easy food ordering and pick up.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Increase visibility of line wait times for each campus dining location.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Allow for convenient in-app payment using DePaul ID, Demon Express, and credit/debit.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Increase visibility of DDS experience.'
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_4__components_content__["f" /* TextBox */],
+          { title: 'CONCEPTS' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'ol',
+            { 'class': 'list-text-box' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Food ordering through DDS'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Digital recipt'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Push notifications'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Payment link up'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'li',
+              null,
+              'Experience rating system'
+            )
+          )
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'scenarios' },
-        'My next role was to create user scenarios for a few of UDine\u2019s features. The scenarios inform UDine\'s convenient food-ordering ability and in-app payment as well as the line wait time feature.'
+        'My next role was to create user scenarios for a few of UDine\u2019s features. The scenarios inform UDine\u2019s convenient food-ordering ability and in-app payment as well as the line wait time feature.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
