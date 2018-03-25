@@ -1982,6 +1982,7 @@ a:hover {
 }
 .about-content-bg {
   background: #FFF;
+  min-height: 100vh;
 }
 .about-content {
   margin-top: 50px;
