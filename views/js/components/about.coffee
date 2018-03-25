@@ -7,6 +7,10 @@ import $ from 'jquery'
 
 class About extends React.Component
 
+  componentDidMount: ->
+    @props.onPageEntered()
+    return
+
   render: ->
     <div className="container-fluid no-padding about-page">
       <div className="col-md-7">
@@ -34,7 +38,7 @@ class About extends React.Component
             <br /><br />
             I didn’t realize until 30 minutes into my first Introduction to Architecture lecture that designing buildings was not my calling.
             <br /><br />
-            Thankfully, I don't need to be designing buildings to follow my dream.
+            Thankfully, I don’t need to be designing buildings to follow my dream.
             <br /><br />
             As a user experience designer, I am an architect because I am understanding my users and their goals. I am observing and adjusting based on user feedback. As a user interface designer, I am an architect because I am bringing my visions to life. I am creating, writing, and presenting.
           </div>

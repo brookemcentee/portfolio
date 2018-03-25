@@ -13,6 +13,10 @@ class PageUdine extends React.Component
     @state = {}
     return
 
+  componentDidMount: ->
+    @props.onPageEntered()
+    return
+
   render: ->
     <Page name="udine" items={@props.items} history={@props.history}>
       <Header

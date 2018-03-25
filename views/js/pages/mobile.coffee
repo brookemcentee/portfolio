@@ -13,6 +13,10 @@ class PageMobile extends React.Component
     @state = {}
     return
 
+  componentDidMount: ->
+    @props.onPageEntered()
+    return
+
   render: ->
     <Page name="mobile" items={@props.items} history={@props.history}>
       <Header

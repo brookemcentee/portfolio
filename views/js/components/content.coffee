@@ -94,6 +94,12 @@ class Images extends React.Component
           {
             @props.images.map (image, i) =>
               <div key={i} className="col-sm-#{12 / @props.images.length} col-xs-12">
+                {
+                  if @props.labels?[i]?
+                    <span className="image-label">
+                      {@props.labels[i]}
+                    </span>
+                }
                 <img
                   className="#{if @props.noShadow then '' else 'img-float'}"
                   src={image}

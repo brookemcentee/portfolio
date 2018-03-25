@@ -15,6 +15,10 @@ class Accordion extends React.Component
       contentHidden: false
     return
 
+  componentDidMount: ->
+    @props.onPageEntered()
+    return
+
   openItem: (item) =>
     $(ReactDOM.findDOMNode(@refs["links-#{item.key}"])).css 'color', item.color
     if not @state.transitioning

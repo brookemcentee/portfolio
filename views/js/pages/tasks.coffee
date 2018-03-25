@@ -13,6 +13,10 @@ class PageTasks extends React.Component
     @state = {}
     return
 
+  componentDidMount: ->
+    @props.onPageEntered()
+    return
+
   render: ->
     <Page name="tasks" items={@props.items} history={@props.history}>
       <Header
@@ -100,9 +104,11 @@ class PageTasks extends React.Component
       </Paragraph>
       <Images
         images={['/images/tasks-before-one.png', '/images/tasks-after-one.png']}
+        labels={['before', 'after']}
       />
       <Images
         images={['/images/tasks-before-two.png', '/images/tasks-after-two.png']}
+        labels={['before', 'after']}
       />
     </Page>
 

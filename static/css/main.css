@@ -1963,6 +1963,17 @@ a:hover {
 .img-float:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+.image-label {
+  color: #8D8D8D;
+  font-weight: 700;
+  font-family: 'Karla', sans-serif;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+  background: #F2F2F2;
+  top: 14px;
+  padding: 8px;
+}
 .container-fluid.no-padding {
   padding: 0;
 }
@@ -2118,7 +2129,6 @@ a:hover {
 .content-images {
   width: 100%;
   margin-bottom: 30px;
-  text-align: center;
 }
 .content-images img {
   margin-top: 20px;

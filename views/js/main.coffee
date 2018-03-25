@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import $ from 'jquery'
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
+import { BrowserRouter as Router, Route, Link, Switch, withRouter } from "react-router-dom"
 
 import Accordion from './components/accordion'
 import About from './components/about'
@@ -36,6 +36,11 @@ class App extends React.Component
     @state = {}
     return
 
+  onPageEntered: (nextProps) ->
+    $('body').hide()
+    $('body').fadeIn 600
+    return
+
   render: ->
     <Router>
       <Switch>
@@ -44,17 +49,22 @@ class App extends React.Component
             <Accordion
               items={accordionItems}
               history={props.history}
+              onPageEntered={@onPageEntered}
             />
         } />
         <Route exact path="/about" render={
           (props) =>
-            <About history={props.history} />
+            <About
+              history={props.history}
+              onPageEntered={@onPageEntered}
+            />
         } />
         <Route exact path="/projects/mobile" render={
           (props) =>
             <PageMobile
               history={props.history}
               items={accordionItems}
+              onPageEntered={@onPageEntered}
             />
         } />
         <Route exact path="/projects/tasks" render={
@@ -62,6 +72,7 @@ class App extends React.Component
             <PageTasks
               history={props.history}
               items={accordionItems}
+              onPageEntered={@onPageEntered}
             />
         } />
         <Route exact path="/projects/basketball" render={
@@ -69,6 +80,7 @@ class App extends React.Component
             <PageBasketball
               history={props.history}
               items={accordionItems}
+              onPageEntered={@onPageEntered}
             />
         } />
         <Route exact path="/projects/udine" render={
@@ -76,6 +88,7 @@ class App extends React.Component
             <PageUdine
               history={props.history}
               items={accordionItems}
+              onPageEntered={@onPageEntered}
             />
         } />
       </Switch>
