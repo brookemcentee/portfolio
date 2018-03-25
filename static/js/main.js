@@ -35021,7 +35021,7 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             null,
-            '2. Insights, Design Priciples & Concepts'
+            '2. Insights, Design Principles & Concepts'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',

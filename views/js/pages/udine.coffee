@@ -33,7 +33,7 @@ class PageUdine extends React.Component
       >
         <div className="ordered-list">
           <div>1. User Research</div>
-          <div>2. Insights, Design Priciples & Concepts</div>
+          <div>2. Insights, Design Principles & Concepts</div>
           <div>3. User Scenarios</div>
           <div>4. Site Map</div>
           <div>5. Prototype</div>
