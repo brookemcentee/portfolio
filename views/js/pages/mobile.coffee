@@ -47,7 +47,7 @@ class PageMobile extends React.Component
       <Paragraph
         title="requirements"
       >
-        Our tight two-month timeline meant that we had to strictly prioritize our most impactful ideas which, in turn, allowed us to focus on creating an elegant app with a few essential new features. The most impactful design requirements were based on simplification, customization, and optimization.
+        A tight timeline meant that we had to strictly prioritize our most impactful ideas which, in turn, allowed us to focus on creating an elegant app with a few essential new features. The most impactful design requirements were based on simplification, customization, and optimization.
       </Paragraph>
       <Paragraph
         title="wireframes"
@@ -57,12 +57,27 @@ class PageMobile extends React.Component
       <Paragraph
         title="mockups"
       >
-        Using Sketch, I created mockups.
+        I created mockups using Sketch.
+        <Subsection
+          title="simplicity"
+        >
+          Our main goal for the new mobile app was to keep it simple. This meant clear navigation, paring down and reorganizing data, simple transitions, and meaningful iconography.
+        </Subsection>
+        <Subsection
+          title="iconography"
+        >
+          I created an iconography set that would act as a language to reduce text, increase screen real estate, and add personality to the mobile app.
+        </Subsection>
+        <Subsection
+          title="discovery"
+        >
+          Emphasizing and optimizing discovery within each feature of the mobile app was imperative.
+        </Subsection>
       </Paragraph>
       <Paragraph
         title="development"
       >
-        Worked cross-functionally with 1 project lead, 2 FE devs and 1 BE dev
+        Using Zeplin and Asana as collaboration tools, I worked cross-functionally with the back and front-end development teams to ensure the new mobile app was developed as intended. By regularly checking in with the developers, I minimized miscommunication and prevented waste of development resources.
       </Paragraph>
     </Page>
 

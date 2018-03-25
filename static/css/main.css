@@ -2013,7 +2013,7 @@ a:hover {
   margin-top: 50px;
 }
 .about-content .content-section-title {
-  color: #000;
+  color: #333;
 }
 .accordion-title {
   color: #FFF;
@@ -2048,7 +2048,7 @@ a:hover {
 }
 .accordion-links a {
   display: block;
-  color: #000;
+  color: #333;
   font-size: 32px;
   font-family: 'Karla', sans-serif;
   margin-bottom: 32px;
@@ -2067,8 +2067,10 @@ a:hover {
 }
 .navigation a:hover,
 .navigation a.active {
-  color: #000000;
   text-decoration: underline;
+}
+.navigation a.active {
+  color: #333;
 }
 .content-author {
   margin-top: 50px;
@@ -2079,7 +2081,6 @@ a:hover {
   font-family: 'Karla', sans-serif;
 }
 .content-author a:hover {
-  color: #000;
   text-decoration: none;
 }
 .content-header-title {
@@ -2158,7 +2159,7 @@ a:hover {
   color: #b6b6b6;
 }
 .footer a:hover {
-  color: #000;
+  color: #333;
   text-decoration: none;
 }
 .footer-pages a {
@@ -2171,7 +2172,4 @@ a:hover {
   background-color: #F2F2F2;
   padding: 20px;
   margin-bottom: 20px;
-}
-.list-text-box {
-  padding-left: 20px;
 }

@@ -52,36 +52,14 @@ class PageUdine extends React.Component
         We then collaborated to frame insights based on our user research that would inform our application’s design. From our insights, we worked together to create design principles that would guide the intention and design of UDine. Concepts for UDine’s features were then formulated as we had an idea of what UDine needed to offer in order to solve the problem at hand.
       </Paragraph>
       <TextBoxes>
-        <TextBox title="INSIGHTS">
-          <ol class="list-text-box">
-            <li>Student’s schedules determine where they dine.</li>
-            <li>A typical student with a meal plan uses DDS 1-3 times per day.</li>
-            <li>Take-out is usually done with the dining area is too crowded or when dining alone.</li>
-            <li>Peak hours occur during lunch and dinner.</li>
-            <li>Line wait times increase quite dramatically during peak hours.</li>
-            <li>Students tend to get fast food or snacks during peak hours to avoid waiting in long lines.</li>
-            <li>Students trust DDS staff and find them to be friendly.</li>
-            <li>Students often use food ordering apps such as GrubHub and Seamless.</li>
-            <li>Students like GrubHub’s convenient features such as menus, ETA, and in-app payment.</li>
-          </ol>
+        <TextBox title="example insight">
+          Student’s schedules determine where they dine
         </TextBox>
-        <TextBox title="DESIGN PRINCIPLES">
-          <ol class="list-text-box">
-            <li>Allow users to quickly choose which campus dining location they will be ordering from.</li>
-            <li>Facilitate quick and easy food ordering and pick up.</li>
-            <li>Increase visibility of line wait times for each campus dining location.</li>
-            <li>Allow for convenient in-app payment using DePaul ID, Demon Express, and credit/debit.</li>
-            <li>Increase visibility of DDS experience.</li>
-          </ol>
+        <TextBox title="example design principle">
+          Allow users to quickly choose which campus dining location they will be ordering from
         </TextBox>
-        <TextBox title="CONCEPTS">
-          <ol class="list-text-box">
-            <li>Food ordering through DDS</li>
-            <li>Digital recipt</li>
-            <li>Push notifications</li>
-            <li>Payment link up</li>
-            <li>Experience rating system</li>
-          </ol>
+        <TextBox title="example concept">
+          Food ordering through DePaul Dining Services
         </TextBox>
       </TextBoxes>
       <Paragraph
@@ -89,6 +67,9 @@ class PageUdine extends React.Component
       >
         My next role was to create user scenarios for a few of UDine’s features. The scenarios inform UDine’s convenient food-ordering ability and in-app payment as well as the line wait time feature.
       </Paragraph>
+      <TextBox title="example scenario">
+        Stacy worked from nine to five today and now has night class at 5:45pm. She is very hungry for dinner but realizes that she forgot to pack a meal. It is 5:15pm, so she only has 30 minutes to get dinner and make it to her class on time. Thankfully, she is already on campus so she signs into UDine on her phone and checks to see if the cafeteria is busy. It is, so she uses UDine to order and pay for her favorite pasta dish while heading toward to Student Center. By the time she reaches the cafeteria, Stacy gets a push notification that her food is ready for pick up. She shows her digital receipt to the DDS staff who kindly hands Stacy her dinner. Stacy heads to class with her dinner, making it with five minutes to spare.
+      </TextBox>
       <Paragraph
         title="site map"
       >

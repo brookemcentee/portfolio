@@ -113,10 +113,10 @@ a{
 }
 
 .about-content .content-section-title{
-  color: #000;
+  color: #333;
 }
 
-.accordion-title {
+.accordion-title, {
   color: #FFF;
   position: absolute;
   bottom: 50px;
@@ -151,7 +151,7 @@ a{
   line-height: 32px;
   a {
     display: block;
-    color: #000;
+    color: #333;
     font-size: 32px;
     .sans-serif();
     margin-bottom: 32px;
@@ -169,8 +169,10 @@ a{
       margin-right: 0px;
     }
     &:hover, &.active {
-      color: #000000;
       text-decoration: underline;
+    }
+    &.active {
+      color: #333;
     }
   }
 }
@@ -182,7 +184,6 @@ a{
     color: #b6b6b6;
     .sans-serif();
     &:hover {
-      color: #000;
       text-decoration: none;
     }
   }
@@ -274,7 +275,7 @@ a{
     .sans-serif();
     color: #b6b6b6;
     &:hover{
-      color: #000;
+      color: #333;
       text-decoration: none;
     }
   }
@@ -293,8 +294,4 @@ a{
   background-color: #F2F2F2;
   padding: 20px;
   margin-bottom: 20px;
-}
-
-.list-text-box{
-  padding-left: 20px;
 }

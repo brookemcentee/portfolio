@@ -34663,7 +34663,7 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'requirements' },
-        'Our tight two-month timeline meant that we had to strictly prioritize our most impactful ideas which, in turn, allowed us to focus on creating an elegant app with a few essential new features. The most impactful design requirements were based on simplification, customization, and optimization.'
+        'A tight timeline meant that we had to strictly prioritize our most impactful ideas which, in turn, allowed us to focus on creating an elegant app with a few essential new features. The most impactful design requirements were based on simplification, customization, and optimization.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
@@ -34673,12 +34673,27 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'mockups' },
-        'Using Sketch, I created mockups.'
+        'I created mockups using Sketch.',
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
+          { title: 'simplicity' },
+          'Our main goal for the new mobile app was to keep it simple. This meant clear navigation, paring down and reorganizing data, simple transitions, and meaningful iconography.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
+          { title: 'iconography' },
+          'I created an iconography set that would act as a language to reduce text, increase screen real estate, and add personality to the mobile app.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
+          { title: 'discovery' },
+          'Emphasizing and optimizing discovery within each feature of the mobile app was imperative.'
+        )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'development' },
-        'Worked cross-functionally with 1 project lead, 2 FE devs and 1 BE dev'
+        'Using Zeplin and Asana as collaboration tools, I worked cross-functionally with the back and front-end development teams to ensure the new mobile app was developed as intended. By regularly checking in with the developers, I minimized miscommunication and prevented waste of development resources.'
       )
     );
   }
@@ -35058,128 +35073,29 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
         null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_4__components_content__["f" /* TextBox */],
-          { title: 'INSIGHTS' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'ol',
-            { 'class': 'list-text-box' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Student\u2019s schedules determine where they dine.'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'A typical student with a meal plan uses DDS 1-3 times per day.'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Take-out is usually done with the dining area is too crowded or when dining alone.'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Peak hours occur during lunch and dinner.'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Line wait times increase quite dramatically during peak hours.'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Students tend to get fast food or snacks during peak hours to avoid waiting in long lines.'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Students trust DDS staff and find them to be friendly.'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Students often use food ordering apps such as GrubHub and Seamless.'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Students like GrubHub\u2019s convenient features such as menus, ETA, and in-app payment.'
-            )
-          )
+          { title: 'example insight' },
+          'Student\u2019s schedules determine where they dine'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_4__components_content__["f" /* TextBox */],
-          { title: 'DESIGN PRINCIPLES' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'ol',
-            { 'class': 'list-text-box' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Allow users to quickly choose which campus dining location they will be ordering from.'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Facilitate quick and easy food ordering and pick up.'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Increase visibility of line wait times for each campus dining location.'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Allow for convenient in-app payment using DePaul ID, Demon Express, and credit/debit.'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Increase visibility of DDS experience.'
-            )
-          )
+          { title: 'example design principle' },
+          'Allow users to quickly choose which campus dining location they will be ordering from'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_4__components_content__["f" /* TextBox */],
-          { title: 'CONCEPTS' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'ol',
-            { 'class': 'list-text-box' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Food ordering through DDS'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Digital recipt'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Push notifications'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Payment link up'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'li',
-              null,
-              'Experience rating system'
-            )
-          )
+          { title: 'example concept' },
+          'Food ordering through DePaul Dining Services'
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'scenarios' },
         'My next role was to create user scenarios for a few of UDine\u2019s features. The scenarios inform UDine\u2019s convenient food-ordering ability and in-app payment as well as the line wait time feature.'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4__components_content__["f" /* TextBox */],
+        { title: 'example scenario' },
+        'Stacy worked from nine to five today and now has night class at 5:45pm. She is very hungry for dinner but realizes that she forgot to pack a meal. It is 5:15pm, so she only has 30 minutes to get dinner and make it to her class on time. Thankfully, she is already on campus so she signs into UDine on her phone and checks to see if the cafeteria is busy. It is, so she uses UDine to order and pay for her favorite pasta dish while heading toward to Student Center. By the time she reaches the cafeteria, Stacy gets a push notification that her food is ready for pick up. She shows her digital receipt to the DDS staff who kindly hands Stacy her dinner. Stacy heads to class with her dinner, making it with five minutes to spare.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
