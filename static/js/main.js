@@ -34486,24 +34486,28 @@ About = class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
       { className: 'container-fluid no-padding about-page' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'col-md-7' },
+        { className: 'col-md-7 no-padding' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          { className: 'about-image-background' },
+          { className: 'about-image-container' },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: 'accordion-title' },
+            { className: 'about-image-background' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
-              { className: 'accordion-title-header' },
-              'Brooke',
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-              'McEntee'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'accordion-title-subheader' },
-              '\u2013 ui/ux designer'
+              { className: 'accordion-title' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'accordion-title-header' },
+                'Brooke',
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+                'McEntee'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'accordion-title-subheader' },
+                '\u2013 ui/ux designer'
+              )
             )
           )
         )
