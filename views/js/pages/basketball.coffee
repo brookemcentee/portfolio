@@ -13,6 +13,10 @@ class PageBasketball extends React.Component
     @state = {}
     return
 
+  componentDidMount: ->
+    @props.onPageEntered()
+    return
+
   render: ->
     <Page name="basketball" items={@props.items} history={@props.history}>
       <Header

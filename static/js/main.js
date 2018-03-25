@@ -11659,9 +11659,15 @@ Images = class Images extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
           'div',
           { className: 'row' },
           this.props.images.map((image, i) => {
+            var ref;
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
               { key: i, className: `col-sm-${12 / this.props.images.length} col-xs-12` },
+              ((ref = this.props.labels) != null ? ref[i] : void 0) != null ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                { className: 'image-label' },
+                this.props.labels[i]
+              ) : void 0,
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: `${this.props.noShadow ? '' : 'img-float'}`, src: image })
             );
           })
@@ -13283,6 +13289,11 @@ App = class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
     return;
   }
 
+  onPageEntered(nextProps) {
+    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('body').hide();
+    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('body').fadeIn(600);
+  }
+
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3_react_router_dom__["a" /* BrowserRouter */],
@@ -13291,22 +13302,22 @@ App = class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
         __WEBPACK_IMPORTED_MODULE_3_react_router_dom__["c" /* Switch */],
         null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Route */], { exact: true, path: '/', render: props => {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_accordion__["a" /* default */], { items: accordionItems, history: props.history });
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_accordion__["a" /* default */], { items: accordionItems, history: props.history, onPageEntered: this.onPageEntered });
           } }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Route */], { exact: true, path: '/about', render: props => {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_about__["a" /* default */], { history: props.history });
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_about__["a" /* default */], { history: props.history, onPageEntered: this.onPageEntered });
           } }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Route */], { exact: true, path: '/projects/mobile', render: props => {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__pages_mobile__["a" /* default */], { history: props.history, items: accordionItems });
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__pages_mobile__["a" /* default */], { history: props.history, items: accordionItems, onPageEntered: this.onPageEntered });
           } }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Route */], { exact: true, path: '/projects/tasks', render: props => {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__pages_tasks__["a" /* default */], { history: props.history, items: accordionItems });
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__pages_tasks__["a" /* default */], { history: props.history, items: accordionItems, onPageEntered: this.onPageEntered });
           } }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Route */], { exact: true, path: '/projects/basketball', render: props => {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__pages_basketball__["a" /* default */], { history: props.history, items: accordionItems });
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__pages_basketball__["a" /* default */], { history: props.history, items: accordionItems, onPageEntered: this.onPageEntered });
           } }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Route */], { exact: true, path: '/projects/udine', render: props => {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__pages_udine__["a" /* default */], { history: props.history, items: accordionItems });
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__pages_udine__["a" /* default */], { history: props.history, items: accordionItems, onPageEntered: this.onPageEntered });
           } })
       )
     );
@@ -34256,6 +34267,10 @@ Accordion = class Accordion extends __WEBPACK_IMPORTED_MODULE_0_react___default.
     return;
   }
 
+  componentDidMount() {
+    this.props.onPageEntered();
+  }
+
   openItem(item) {
     boundMethodCheck(this, Accordion);
     __WEBPACK_IMPORTED_MODULE_4_jquery___default()(__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this.refs[`links-${item.key}`])).css('color', item.color);
@@ -34461,6 +34476,10 @@ var About;
 
 
 About = class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  componentDidMount() {
+    this.props.onPageEntered();
+  }
+
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
@@ -34508,7 +34527,7 @@ About = class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
             'I didn\u2019t realize until 30 minutes into my first Introduction to Architecture lecture that designing buildings was not my calling.',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-            'Thankfully, I don\'t need to be designing buildings to follow my dream.',
+            'Thankfully, I don\u2019t need to be designing buildings to follow my dream.',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             'As a user experience designer, I am an architect because I am understanding my users and their goals. I am observing and adjusting based on user feedback. As a user interface designer, I am an architect because I am bringing my visions to life. I am creating, writing, and presenting.'
@@ -34583,6 +34602,10 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
     super(props);
     this.state = {};
     return;
+  }
+
+  componentDidMount() {
+    this.props.onPageEntered();
   }
 
   render() {
@@ -34692,6 +34715,10 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
     return;
   }
 
+  componentDidMount() {
+    this.props.onPageEntered();
+  }
+
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_3__components_page__["a" /* default */],
@@ -34784,8 +34811,8 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
         { title: 'development' },
         'I worked cross-functionally with the back and front-end development teams to ensure the tasks page was developed as intended. By regularly checking in with the developers, I minimized miscommunication and prevented waste of development resources. We completed the entire feature redesign within a two-week development sprint.'
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-before-one.png', '/images/tasks-after-one.png'] }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-before-two.png', '/images/tasks-after-two.png'] })
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-before-one.png', '/images/tasks-after-one.png'], labels: ['before', 'after'] }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-before-two.png', '/images/tasks-after-two.png'], labels: ['before', 'after'] })
     );
   }
 
@@ -34823,6 +34850,10 @@ PageBasketball = class PageBasketball extends __WEBPACK_IMPORTED_MODULE_0_react_
     super(props);
     this.state = {};
     return;
+  }
+
+  componentDidMount() {
+    this.props.onPageEntered();
   }
 
   render() {
@@ -34956,6 +34987,10 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
     super(props);
     this.state = {};
     return;
+  }
+
+  componentDidMount() {
+    this.props.onPageEntered();
   }
 
   render() {
