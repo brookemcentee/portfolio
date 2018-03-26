@@ -26,7 +26,7 @@ class PageTasks extends React.Component
       <Paragraph
         title="challenge"
       >
-        Tasks are the most important part of the student experience on NextTier. Therefore, we need a robust feature that clearly highlights relevant tasks, while also communicating task status and action items. My challenge was to improve the student tasks experience based on one year of user feedback by creating attractive, familiar and easy to use UI components.
+        Tasks are the most important part of the student experience on NextTier. We needed a robust feature set that clearly highlighted relevant tasks, while also communicating task status and action items. Working with a full year of user feedback, I was challenged with creating an attractive, familiar, and easy to use student tasks experience.
       </Paragraph>
       <Paragraph
         title="process"
@@ -41,7 +41,7 @@ class PageTasks extends React.Component
       <Paragraph
         title="requirements"
       >
-        The previous version of student tasks had poor usability due to a lack of hierarchy and visual interest. I worked to ensure our new version fixed these issues, without sacrificing any of its strengths. My team and I brainstormed features and interactions that were needed, and prioritized those in conjunction with opportunities for improvement. From there, I created user stories to ensure full understanding of the updated functionality and our target user.
+        The previous version of student tasks had poor usability due to a lack of hierarchy and visual interest. I worked to ensure our new version fixed these issues, without sacrificing any of its strengths.
       </Paragraph>
       <Image
         src="/images/tasks-one.svg"
@@ -53,17 +53,17 @@ class PageTasks extends React.Component
         <Subsection
           title="components"
         >
-          The tasks page is loaded with information and students tend to skim through this content quickly. In order to avoid information overload and allow students to immediately digest and engage with the content, I decided to implement a card-based interface. Users can easily scan through many cards to find relevant tasks, without feeling overwhelmed.
-        </Subsection>
-        <Subsection
-          title="hierarchy"
-        >
-          After collecting a content inventory of all information and actions on the page, I separated high priority actions and information from the lower priority. By sketching collapsed tasks alongside tasks with fully expanded details, I established the visual hierarchy of the page. The important information was placed into the collapsed state, with all other content placed into the expanded state.
+          The tasks page is loaded with information, and students tend to skim through this content quickly. In order to avoid information overload and allow students to immediately digest and engage with the content, I decided to implement a card-based interface. Users can easily scan through many cards to find relevant tasks, without feeling overwhelmed.
         </Subsection>
         <Subsection
           title="progress"
         >
-          After building the layout of the task components, I needed make task progress extremely clear for the users, as this is one of the most important heuristics for this page. Through the use of color coding and iconography, I was able to display the status of each task in a simple and intuitive way.
+          I needed make task progress extremely clear for the users, as this is one of the most important heuristics for the page. Through the use of color coding and iconography, I was able to display the status of each task in a simple and intuitive way.
+        </Subsection>
+        <Subsection
+          title="hierarchy"
+        >
+          After collecting a content inventory of all information and actions on the page, I separated high priority actions and information from the lower priority. By sketching collapsed tasks alongside tasks with fully expanded details, I established the visual hierarchy of the page. The important information was shown in the  collapsed state, with all other content available  when the component has been expanded.
         </Subsection>
       </Paragraph>
       <Images
@@ -73,7 +73,7 @@ class PageTasks extends React.Component
       <Paragraph
         title="mockups"
       >
-        Illustrator is where my ideas and sketches come to life. I perfected the visual elements and created design consistency.
+        Illustrator is where my ideas and sketches came to life. I perfected the visual elements and created design consistency.
         <Subsection
           title="pattern"
         >
@@ -87,7 +87,7 @@ class PageTasks extends React.Component
         <Subsection
           title="color"
         >
-          When tasks are started, they change from blue to orange, indicating that the task requires more action. Once it is marked complete, the task becomes green, sending the student positive feedback. As tasks are completed, the overall progress circles in the sidebar dynamically fill up with color. These color changes are stimulating to the user, and provide incentive for the student to continue completing tasks.
+          When tasks are started, they change from blue to orange, indicating that the task requires more action. Once it is marked complete, the task becomes green, sending the student positive feedback. As tasks are completed, the overall progress circles in the sidebar dynamically fill up with color. These color changes are stimulating to the user, and provide incentive for the student to continue completing tasks..
         </Subsection>
       </Paragraph>
       <Images
@@ -100,7 +100,7 @@ class PageTasks extends React.Component
       <Paragraph
         title="development"
       >
-        I worked cross-functionally with the back and front-end development teams to ensure the tasks page was developed as intended. By regularly checking in with the developers, I minimized miscommunication and prevented waste of development resources. We completed the entire feature redesign within a two-week development sprint.
+        With this project, communication with developers was key. Maintaining focus on the goals of the design was paramount to the success of the project. By proactively answering questions and reviewing staging updates, we were able to finish the project with the application staying true to the design.
       </Paragraph>
       <Images
         images={['/images/tasks-before-one.png', '/images/tasks-after-one.png']}

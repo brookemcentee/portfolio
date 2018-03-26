@@ -26,7 +26,7 @@ class PageMobile extends React.Component
       <Paragraph
         title="challenge"
       >
-        The student-facing mobile app required a complete facelift. After trashing the old app plagued with inconsistency and outdated design paradigms, our work was cut out for us. We challenged ourselves to think backward, a concept I learned about at a design conference just before starting this project. We started with our end goal, a perfectly smooth mobile experience, and then worked backward to figure out what we needed to do/implement to make that ideal experience a reality.
+        The student-facing mobile app required a complete facelift. After trashing the old app, plagued with inconsistency and outdated design paradigms, our work was cut out for us. We challenged ourselves to think backward, a concept I learned about at a design conference just before starting this project. We started with our end goal, a perfectly smooth mobile experience, and worked backward to figure out what we needed to implement to make that ideal experience a reality.
       </Paragraph>
       <Paragraph
         title="process"
@@ -47,13 +47,21 @@ class PageMobile extends React.Component
       <Paragraph
         title="requirements"
       >
-        A tight timeline meant that we had to strictly prioritize our most impactful ideas which, in turn, allowed us to focus on creating an elegant app with a few essential new features. The most impactful design requirements were based on simplification, customization, and optimization.
+        A tight timeline meant that we had to strictly prioritize our most impactful ideas which, in turn, allowed us to focus on creating an elegant app with a few essential new features. Our design strategy centered around simplification, customization, and optimization.
       </Paragraph>
       <Paragraph
         title="wireframes"
       >
-        I spent the first week of the project in Balsamiq creating wireframes. Focusing on simplicity and clarity, I was able to get a feel for the navigation and components that would make up the majority of the app. At the end of the week, I held a design review where I received the necessary feedback to move on to mockups.
+        The initial phase of the project was spent in Balsamiq creating wireframes. Focusing on simplicity and clarity, I was able to get a feel for the navigation and components that would make up the majority of the app. Before wrapping up the project, I held a design review where I received the necessary feedback to move on to mockups.
       </Paragraph>
+      <Images
+        images={['/images/mobile-wireframe-1.png', '/images/mobile-wireframe-2.png', '/images/mobile-wireframe-3.png', '/images/mobile-wireframe-4.png']}
+        noShadow
+      />
+      <Images
+        images={['/images/mobile-wireframe-5.png', '/images/mobile-wireframe-6.png', '/images/mobile-wireframe-7.png', '/images/mobile-wireframe-8.png']}
+        noShadow
+      />
       <Paragraph
         title="mockups"
       >
@@ -68,6 +76,9 @@ class PageMobile extends React.Component
         >
           I created an iconography set that would act as a language to reduce text, increase screen real estate, and add personality to the mobile app.
         </Subsection>
+        <Image
+        src="/images/mobile-iconography-1.svg"
+        />
         <Subsection
           title="discovery"
         >

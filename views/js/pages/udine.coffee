@@ -85,6 +85,14 @@ class PageUdine extends React.Component
       >
         Once recommendations were conceived after usability testing, I created a mid to high fidelity prototype using Axure, this time with some interactivity built into the application.
       </Paragraph>
+      <Images
+        images={['/images/udine-prototype-1.png', '/images/udine-prototype-2.png', '/images/udine-prototype-3.png', '/images/udine-prototype-4.png']}
+        noShadow
+      />
+      <Images
+        images={['/images/udine-prototype-5.png', '/images/udine-prototype-6.png', '/images/udine-prototype-7.png', '/images/udine-prototype-8.png']}
+        noShadow
+      />
       <Paragraph
         title="solution"
       >

@@ -34620,7 +34620,7 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'challenge' },
-        'The student-facing mobile app required a complete facelift. After trashing the old app plagued with inconsistency and outdated design paradigms, our work was cut out for us. We challenged ourselves to think backward, a concept I learned about at a design conference just before starting this project. We started with our end goal, a perfectly smooth mobile experience, and then worked backward to figure out what we needed to do/implement to make that ideal experience a reality.'
+        'The student-facing mobile app required a complete facelift. After trashing the old app, plagued with inconsistency and outdated design paradigms, our work was cut out for us. We challenged ourselves to think backward, a concept I learned about at a design conference just before starting this project. We started with our end goal, a perfectly smooth mobile experience, and worked backward to figure out what we needed to implement to make that ideal experience a reality.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
@@ -34663,13 +34663,15 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'requirements' },
-        'A tight timeline meant that we had to strictly prioritize our most impactful ideas which, in turn, allowed us to focus on creating an elegant app with a few essential new features. The most impactful design requirements were based on simplification, customization, and optimization.'
+        'A tight timeline meant that we had to strictly prioritize our most impactful ideas which, in turn, allowed us to focus on creating an elegant app with a few essential new features. Our design strategy centered around simplification, customization, and optimization.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'wireframes' },
-        'I spent the first week of the project in Balsamiq creating wireframes. Focusing on simplicity and clarity, I was able to get a feel for the navigation and components that would make up the majority of the app. At the end of the week, I held a design review where I received the necessary feedback to move on to mockups.'
+        'The initial phase of the project was spent in Balsamiq creating wireframes. Focusing on simplicity and clarity, I was able to get a feel for the navigation and components that would make up the majority of the app. Before wrapping up the project, I held a design review where I received the necessary feedback to move on to mockups.'
       ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-wireframe-1.png', '/images/mobile-wireframe-2.png', '/images/mobile-wireframe-3.png', '/images/mobile-wireframe-4.png'], noShadow: true }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-wireframe-5.png', '/images/mobile-wireframe-6.png', '/images/mobile-wireframe-7.png', '/images/mobile-wireframe-8.png'], noShadow: true }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'mockups' },
@@ -34684,6 +34686,7 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
           { title: 'iconography' },
           'I created an iconography set that would act as a language to reduce text, increase screen real estate, and add personality to the mobile app.'
         ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["b" /* Image */], { src: '/images/mobile-iconography-1.svg' }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
           { title: 'discovery' },
@@ -34746,7 +34749,7 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'challenge' },
-        'Tasks are the most important part of the student experience on NextTier. Therefore, we need a robust feature that clearly highlights relevant tasks, while also communicating task status and action items. My challenge was to improve the student tasks experience based on one year of user feedback by creating attractive, familiar and easy to use UI components.'
+        'Tasks are the most important part of the student experience on NextTier. We needed a robust feature set that clearly highlighted relevant tasks, while also communicating task status and action items. Working with a full year of user feedback, I was challenged with creating an attractive, familiar, and easy to use student tasks experience.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
@@ -34779,7 +34782,7 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'requirements' },
-        'The previous version of student tasks had poor usability due to a lack of hierarchy and visual interest. I worked to ensure our new version fixed these issues, without sacrificing any of its strengths. My team and I brainstormed features and interactions that were needed, and prioritized those in conjunction with opportunities for improvement. From there, I created user stories to ensure full understanding of the updated functionality and our target user.'
+        'The previous version of student tasks had poor usability due to a lack of hierarchy and visual interest. I worked to ensure our new version fixed these issues, without sacrificing any of its strengths.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["b" /* Image */], { src: '/images/tasks-one.svg' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -34789,24 +34792,24 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
           { title: 'components' },
-          'The tasks page is loaded with information and students tend to skim through this content quickly. In order to avoid information overload and allow students to immediately digest and engage with the content, I decided to implement a card-based interface. Users can easily scan through many cards to find relevant tasks, without feeling overwhelmed.'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
-          { title: 'hierarchy' },
-          'After collecting a content inventory of all information and actions on the page, I separated high priority actions and information from the lower priority. By sketching collapsed tasks alongside tasks with fully expanded details, I established the visual hierarchy of the page. The important information was placed into the collapsed state, with all other content placed into the expanded state.'
+          'The tasks page is loaded with information, and students tend to skim through this content quickly. In order to avoid information overload and allow students to immediately digest and engage with the content, I decided to implement a card-based interface. Users can easily scan through many cards to find relevant tasks, without feeling overwhelmed.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
           { title: 'progress' },
-          'After building the layout of the task components, I needed make task progress extremely clear for the users, as this is one of the most important heuristics for this page. Through the use of color coding and iconography, I was able to display the status of each task in a simple and intuitive way.'
+          'I needed make task progress extremely clear for the users, as this is one of the most important heuristics for the page. Through the use of color coding and iconography, I was able to display the status of each task in a simple and intuitive way.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
+          { title: 'hierarchy' },
+          'After collecting a content inventory of all information and actions on the page, I separated high priority actions and information from the lower priority. By sketching collapsed tasks alongside tasks with fully expanded details, I established the visual hierarchy of the page. The important information was shown in the  collapsed state, with all other content available  when the component has been expanded.'
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-eight.png', '/images/tasks-seven.png'], background: '#f2f2f2' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'mockups' },
-        'Illustrator is where my ideas and sketches come to life. I perfected the visual elements and created design consistency.',
+        'Illustrator is where my ideas and sketches came to life. I perfected the visual elements and created design consistency.',
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
           { title: 'pattern' },
@@ -34820,7 +34823,7 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
           { title: 'color' },
-          'When tasks are started, they change from blue to orange, indicating that the task requires more action. Once it is marked complete, the task becomes green, sending the student positive feedback. As tasks are completed, the overall progress circles in the sidebar dynamically fill up with color. These color changes are stimulating to the user, and provide incentive for the student to continue completing tasks.'
+          'When tasks are started, they change from blue to orange, indicating that the task requires more action. Once it is marked complete, the task becomes green, sending the student positive feedback. As tasks are completed, the overall progress circles in the sidebar dynamically fill up with color. These color changes are stimulating to the user, and provide incentive for the student to continue completing tasks..'
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-two.svg', '/images/tasks-three.svg'] }),
@@ -34828,7 +34831,7 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'development' },
-        'I worked cross-functionally with the back and front-end development teams to ensure the tasks page was developed as intended. By regularly checking in with the developers, I minimized miscommunication and prevented waste of development resources. We completed the entire feature redesign within a two-week development sprint.'
+        'With this project, communication with developers was key. Maintaining focus on the goals of the design was paramount to the success of the project. By proactively answering questions and reviewing staging updates, we were able to finish the project with the application staying true to the design.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-before-one.png', '/images/tasks-after-one.png'], labels: ['before', 'after'] }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-before-two.png', '/images/tasks-after-two.png'], labels: ['before', 'after'] })
@@ -35108,6 +35111,8 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
         { title: 'prototype' },
         'Once recommendations were conceived after usability testing, I created a mid to high fidelity prototype using Axure, this time with some interactivity built into the application.'
       ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/udine-prototype-1.png', '/images/udine-prototype-2.png', '/images/udine-prototype-3.png', '/images/udine-prototype-4.png'], noShadow: true }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/udine-prototype-5.png', '/images/udine-prototype-6.png', '/images/udine-prototype-7.png', '/images/udine-prototype-8.png'], noShadow: true }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'solution' },
