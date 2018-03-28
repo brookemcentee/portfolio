@@ -34622,6 +34622,7 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
         { title: 'challenge' },
         'The student-facing mobile app required a complete facelift. After trashing the old app, plagued with inconsistency and outdated design paradigms, our work was cut out for us. We challenged ourselves to think backward, a concept I learned about at a design conference just before starting this project. We started with our end goal, a perfectly smooth mobile experience, and worked backward to figure out what we needed to implement to make that ideal experience a reality.'
       ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-gif.gif'], noShadow: true }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'process' },
@@ -34681,6 +34682,8 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
           { title: 'simplicity' },
           'Our main goal for the new mobile app was to keep it simple. This meant clear navigation, paring down and reorganizing data, simple transitions, and meaningful iconography.'
         ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-simplicity-1.svg', '/images/mobile-simplicity-2.svg', '/images/mobile-simplicity-3.svg', '/images/mobile-simplicity-4.svg'] }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-simplicity-5.svg', '/images/mobile-simplicity-6.svg', '/images/mobile-simplicity-7.svg', '/images/mobile-simplicity-8.svg'] }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
           { title: 'iconography' },
@@ -34691,12 +34694,14 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
           __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
           { title: 'discovery' },
           'Emphasizing and optimizing discovery within each feature of the mobile app was imperative.'
-        )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-discovery-1.svg', '/images/mobile-discovery-2.png', '/images/mobile-discovery-3.png', '/images/mobile-discovery-4.png'] }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-discovery-5.svg', '/images/mobile-discovery-6.svg', '/images/mobile-discovery-7.svg', '/images/mobile-discovery-8.svg'] })
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'development' },
-        'Using Zeplin and Asana as collaboration tools, I worked cross-functionally with the back and front-end development teams to ensure the new mobile app was developed as intended. By regularly checking in with the developers, I minimized miscommunication and prevented waste of development resources.'
+        'Using Zeplin, Slack and Asana as collaboration tools, I worked cross-functionally with the back and front-end development teams to ensure the new mobile app was developed as intended. By regularly checking in with the developers, I minimized miscommunication and prevented waste of development resources.'
       )
     );
   }
@@ -34827,7 +34832,6 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-two.svg', '/images/tasks-three.svg'] }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-four.png', '/images/tasks-five.png', '/images/tasks-six.png'], background: '#f2f2f2' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'development' },
@@ -34897,44 +34901,34 @@ PageBasketball = class PageBasketball extends __WEBPACK_IMPORTED_MODULE_0_react_
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             null,
-            '1. Ideation'
+            '1. Research'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             null,
-            '2. External Resource Research'
+            '2. Content Inventory'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             null,
-            '3. Content Inventory'
+            '3. Card Sort'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             null,
-            '4. Card Sort'
+            '4. Sitemap'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             null,
-            '5. Site Map'
+            '5. Sketches'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             null,
-            '6. Sketches'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            null,
-            '7. Wireframe'
+            '6. Wireframe'
           )
         )
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
-        { title: 'ideation' },
-        'Each team member shared his or her individual topic proposal in order to indicate a starting point through similarities. Each proposal focused on health/wellness or sports/fitness. As a team, we brainstormed potential topics and concluded that a basketball informational website with a focus on fundamental skills, offensive skills, defensive skills, and training/conditioning would best suit our combined interests.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
@@ -34949,14 +34943,14 @@ PageBasketball = class PageBasketball extends __WEBPACK_IMPORTED_MODULE_0_react_
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'card sort' },
-        'In understanding that our content inventory and site map may not perfectly reflect our potential users\u2019 concepts of the basketball space, we conducted a card sort. The card sort helped us to gain more insight into how people categorize items within the basketball space. For the card sort we included the existing categories of Fundamentals, Offense, Defense and Strength & Conditioning as well a 52 items of content from the content inventory. I set up our card sort using ConceptCodify, an online card sorting tool. Each team member sent the card sort out to friends, family, peers, etc. in order to obtain a wide range of data.'
+        'To help us gain more insight into how people categorize items within the basketball space, we conducted an online card sort. We included the existing categories of Fundamentals, Offense, Defense and Strength & Conditioning and 52 items from the content inventory. Each team member sent the card sort out to friends, family, and peers in order to obtain a wide range of data.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
-        { title: 'site map' },
-        'I took the role of creating the site map. For the first iteration of the site map, I sketched out what the organization of the website might look like. After analyzing the card sort results, I had a better idea of the organization of the website and ensured that the final iteration of the site map reflected the results and recommendations pulled from our card sort analysis. I used draw.io, a Google Drive plugin to create the site map.'
+        { title: 'sitemap' },
+        'After analyzing the card sort results, we had a better idea of the organization of the website and ensured that the final iteration of the site map reflected the results and recommendations pulled from our card sort analysis. We used draw.io, a Google Drive plugin to create the site map.'
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/basketball-one.jpg'], background: '#f2f2f2', noShadow: true }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/basketball-sitemap-1.jpg'], background: '#f2f2f2', noShadow: true }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'sketches' },
@@ -34966,10 +34960,18 @@ PageBasketball = class PageBasketball extends __WEBPACK_IMPORTED_MODULE_0_react_
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/basketball-sketches-4.jpg', '/images/basketball-sketches-5.jpg'], background: '#f2f2f2' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
+        { title: 'wireframe' },
+        'Lastly, we created a ',
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'a',
+          { href: '#' },
+          'wireframe'
+        ),
+        ' of Basketball Academy using HTML and CSS.'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'solution' },
-        'Online learning has become instinctive for tasks such as learning a language; however, imagine learning how to play a sport online. Sports are learned in a similar way to learning a language: there are vocabulary and rules to learn as well as training and drills that must be executed in order to improve. Take basketball as an example. Basketball begins with rules and the skills required to play. Once all of the rules and skills are learned, drills can be exercised in order to become a more educated player.',
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
         'Online Basketball Academy is a informational and educational website for people hoping to learn the game or improve their game. The website pulls together and organizes the rules of the game, the skills necessary to play as well as drills that improve on specific skills at different levels of expertise.'
       )
     );
@@ -35023,7 +35025,7 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'challenge' },
-        'As a full-time student at DePaul with a part-time job in Chicago, I understand the stresses of finding the time to grab a bite to eat between daily responsibilities. Although DePaul Dining Services offers two on-campus locations for students to dine, one in the Lincoln Park Student Center and one in the Loop DePaul Center, the inconvenience of food prep time and lines pressure students to grab the quickest thing they can and go. This problem usually results in eating something unhealthy like french fries or insufficient like a granola bar. My group members and I were motivated to create a student-friendly mobile application that could help solve this challenge.'
+        'Although DePaul Dining Services offers two on-campus locations for students to dine, one in the Lincoln Park Student Center and one in the Loop DePaul Center, the inconvenience of food prep time and lines pressure students to grab the quickest thing they can and go. This problem usually results in eating something unhealthy or insufficient. My group members and I were motivated to create a mobile app that could help solve this challenge.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
@@ -35049,7 +35051,7 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             null,
-            '4. Site Map'
+            '4. Sitemap'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
@@ -35064,12 +35066,12 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
         'Before creating the UDine prototype, each group member conducted intensive user research including user interviews and observations. We completed six interviews with students across campus who utilized DePaul Dining Services, ranging from the undeclared freshman to the MBA graduate student. We also observed the DePaul Dining Services environment throughout the week and weekend during both busy and relaxed dining times.',
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-        'Target audience: Undergraduate and graduate students who either have a meal plan or who use DePaul Dining Services frequently.'
+        'Target audience: Undergraduate and graduate students who use DePaul Dining Services 2-5 times per week.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'insights' },
-        'We then collaborated to frame insights based on our user research that would inform our application\u2019s design. From our insights, we worked together to create design principles that would guide the intention and design of UDine. Concepts for UDine\u2019s features were then formulated as we had an idea of what UDine needed to offer in order to solve the problem at hand.'
+        'We collaborated to frame insights based on our user research that would inform our design. From our insights, we created design principles that would guide the intention and design of UDine. Concepts for UDine\u2019s features were then formulated as we had an idea of what UDine needed to offer in order to solve the problem at hand.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["g" /* TextBoxes */],
@@ -35093,7 +35095,7 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'scenarios' },
-        'My next role was to create user scenarios for a few of UDine\u2019s features. The scenarios inform UDine\u2019s convenient food-ordering ability and in-app payment as well as the line wait time feature.'
+        'My next role was to create user scenarios for a few of UDine\u2019s features.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["f" /* TextBox */],
@@ -35103,20 +35105,20 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'site map' },
-        'My group members and I used all of our research, insights, user stories and more to create a site map for UDine.'
+        'My group members and I used all of our research, insights and user scenarios to create a sitemap for UDine.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/udine-sitemap-1.jpg'], background: '#f2f2f2', noShadow: true }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'prototype' },
-        'Once recommendations were conceived after usability testing, I created a mid to high fidelity prototype using Axure, this time with some interactivity built into the application.'
+        'Lastly, we designed an interactive prototype using Axure.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/udine-prototype-1.png', '/images/udine-prototype-2.png', '/images/udine-prototype-3.png', '/images/udine-prototype-4.png'], noShadow: true }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/udine-prototype-5.png', '/images/udine-prototype-6.png', '/images/udine-prototype-7.png', '/images/udine-prototype-8.png'], noShadow: true }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'solution' },
-        'UDine is a mobile application, optimized for busy students who are on-the-go, which provides a food ordering system through DePaul Dining Services. All DePaul students can access UDine with their DePaul-provided Campus Connect login information. After logging in, students simply choose which campus location they wish to order and pick-up from, and place their order. UDine is connected to each student\u2019s DePaul account, so their DePaul Meal Plan and Demon Express balance will automatically connect as payment method options, with the choice to add external payment methods. Once an order is paid for and processed, users receive a digital receipt to show at pick-up. Users simply shows their digital receipt at pick-up, avoiding food prep time, lines and other inconveniences.'
+        'UDine is a mobile app, optimized for busy students who are on-the-go, which provides a food ordering system through DePaul Dining Services.'
       )
     );
   }

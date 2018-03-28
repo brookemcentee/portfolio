@@ -26,7 +26,7 @@ class PageUdine extends React.Component
       <Paragraph
         title="challenge"
       >
-        As a full-time student at DePaul with a part-time job in Chicago, I understand the stresses of finding the time to grab a bite to eat between daily responsibilities. Although DePaul Dining Services offers two on-campus locations for students to dine, one in the Lincoln Park Student Center and one in the Loop DePaul Center, the inconvenience of food prep time and lines pressure students to grab the quickest thing they can and go. This problem usually results in eating something unhealthy like french fries or insufficient like a granola bar. My group members and I were motivated to create a student-friendly mobile application that could help solve this challenge.
+        Although DePaul Dining Services offers two on-campus locations for students to dine, one in the Lincoln Park Student Center and one in the Loop DePaul Center, the inconvenience of food prep time and lines pressure students to grab the quickest thing they can and go. This problem usually results in eating something unhealthy or insufficient. My group members and I were motivated to create a mobile app that could help solve this challenge.
       </Paragraph>
       <Paragraph
         title="process"
@@ -35,7 +35,7 @@ class PageUdine extends React.Component
           <div>1. User Research</div>
           <div>2. Insights, Design Principles & Concepts</div>
           <div>3. User Scenarios</div>
-          <div>4. Site Map</div>
+          <div>4. Sitemap</div>
           <div>5. Prototype</div>
         </div>
       </Paragraph>
@@ -44,12 +44,12 @@ class PageUdine extends React.Component
       >
         Before creating the UDine prototype, each group member conducted intensive user research including user interviews and observations. We completed six interviews with students across campus who utilized DePaul Dining Services, ranging from the undeclared freshman to the MBA graduate student. We also observed the DePaul Dining Services environment throughout the week and weekend during both busy and relaxed dining times.
         <br /><br />
-        Target audience: Undergraduate and graduate students who either have a meal plan or who use DePaul Dining Services frequently.
+        Target audience: Undergraduate and graduate students who use DePaul Dining Services 2-5 times per week.
       </Paragraph>
       <Paragraph
         title="insights"
       >
-        We then collaborated to frame insights based on our user research that would inform our application’s design. From our insights, we worked together to create design principles that would guide the intention and design of UDine. Concepts for UDine’s features were then formulated as we had an idea of what UDine needed to offer in order to solve the problem at hand.
+        We collaborated to frame insights based on our user research that would inform our design. From our insights, we created design principles that would guide the intention and design of UDine. Concepts for UDine’s features were then formulated as we had an idea of what UDine needed to offer in order to solve the problem at hand.
       </Paragraph>
       <TextBoxes>
         <TextBox title="example insight">
@@ -65,7 +65,7 @@ class PageUdine extends React.Component
       <Paragraph
         title="scenarios"
       >
-        My next role was to create user scenarios for a few of UDine’s features. The scenarios inform UDine’s convenient food-ordering ability and in-app payment as well as the line wait time feature.
+        My next role was to create user scenarios for a few of UDine’s features.
       </Paragraph>
       <TextBox title="example scenario">
         Stacy worked from nine to five today and now has night class at 5:45pm. She is very hungry for dinner but realizes that she forgot to pack a meal. It is 5:15pm, so she only has 30 minutes to get dinner and make it to her class on time. Thankfully, she is already on campus so she signs into UDine on her phone and checks to see if the cafeteria is busy. It is, so she uses UDine to order and pay for her favorite pasta dish while heading toward to Student Center. By the time she reaches the cafeteria, Stacy gets a push notification that her food is ready for pick up. She shows her digital receipt to the DDS staff who kindly hands Stacy her dinner. Stacy heads to class with her dinner, making it with five minutes to spare.
@@ -73,7 +73,7 @@ class PageUdine extends React.Component
       <Paragraph
         title="site map"
       >
-        My group members and I used all of our research, insights, user stories and more to create a site map for UDine.
+        My group members and I used all of our research, insights and user scenarios to create a sitemap for UDine.
       </Paragraph>
       <Images
         images={['/images/udine-sitemap-1.jpg']}
@@ -83,7 +83,7 @@ class PageUdine extends React.Component
       <Paragraph
         title="prototype"
       >
-        Once recommendations were conceived after usability testing, I created a mid to high fidelity prototype using Axure, this time with some interactivity built into the application.
+        Lastly, we designed an interactive prototype using Axure.
       </Paragraph>
       <Images
         images={['/images/udine-prototype-1.png', '/images/udine-prototype-2.png', '/images/udine-prototype-3.png', '/images/udine-prototype-4.png']}
@@ -96,7 +96,7 @@ class PageUdine extends React.Component
       <Paragraph
         title="solution"
       >
-        UDine is a mobile application, optimized for busy students who are on-the-go, which provides a food ordering system through DePaul Dining Services. All DePaul students can access UDine with their DePaul-provided Campus Connect login information. After logging in, students simply choose which campus location they wish to order and pick-up from, and place their order. UDine is connected to each student’s DePaul account, so their DePaul Meal Plan and Demon Express balance will automatically connect as payment method options, with the choice to add external payment methods. Once an order is paid for and processed, users receive a digital receipt to show at pick-up. Users simply shows their digital receipt at pick-up, avoiding food prep time, lines and other inconveniences.
+        UDine is a mobile app, optimized for busy students who are on-the-go, which provides a food ordering system through DePaul Dining Services.
       </Paragraph>
     </Page>
 

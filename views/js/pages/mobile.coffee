@@ -28,6 +28,10 @@ class PageMobile extends React.Component
       >
         The student-facing mobile app required a complete facelift. After trashing the old app, plagued with inconsistency and outdated design paradigms, our work was cut out for us. We challenged ourselves to think backward, a concept I learned about at a design conference just before starting this project. We started with our end goal, a perfectly smooth mobile experience, and worked backward to figure out what we needed to implement to make that ideal experience a reality.
       </Paragraph>
+      <Images
+        images={['/images/mobile-gif.gif']}
+        noShadow
+      />
       <Paragraph
         title="process"
       >
@@ -71,6 +75,12 @@ class PageMobile extends React.Component
         >
           Our main goal for the new mobile app was to keep it simple. This meant clear navigation, paring down and reorganizing data, simple transitions, and meaningful iconography.
         </Subsection>
+        <Images
+        images={['/images/mobile-simplicity-1.svg', '/images/mobile-simplicity-2.svg', '/images/mobile-simplicity-3.svg', '/images/mobile-simplicity-4.svg']}
+        />
+        <Images
+        images={['/images/mobile-simplicity-5.svg', '/images/mobile-simplicity-6.svg', '/images/mobile-simplicity-7.svg', '/images/mobile-simplicity-8.svg']}
+        />
         <Subsection
           title="iconography"
         >
@@ -84,11 +94,17 @@ class PageMobile extends React.Component
         >
           Emphasizing and optimizing discovery within each feature of the mobile app was imperative.
         </Subsection>
+        <Images
+        images={['/images/mobile-discovery-1.svg', '/images/mobile-discovery-2.png', '/images/mobile-discovery-3.png', '/images/mobile-discovery-4.png']}
+        />
+        <Images
+        images={['/images/mobile-discovery-5.svg', '/images/mobile-discovery-6.svg', '/images/mobile-discovery-7.svg', '/images/mobile-discovery-8.svg']}
+        />
       </Paragraph>
       <Paragraph
         title="development"
       >
-        Using Zeplin and Asana as collaboration tools, I worked cross-functionally with the back and front-end development teams to ensure the new mobile app was developed as intended. By regularly checking in with the developers, I minimized miscommunication and prevented waste of development resources.
+        Using Zeplin, Slack and Asana as collaboration tools, I worked cross-functionally with the back and front-end development teams to ensure the new mobile app was developed as intended. By regularly checking in with the developers, I minimized miscommunication and prevented waste of development resources.
       </Paragraph>
     </Page>
 

@@ -93,10 +93,6 @@ class PageTasks extends React.Component
       <Images
         images={['/images/tasks-two.svg', '/images/tasks-three.svg']}
       />
-      <Images
-        images={['/images/tasks-four.png', '/images/tasks-five.png', '/images/tasks-six.png']}
-        background="#f2f2f2"
-      />
       <Paragraph
         title="development"
       >

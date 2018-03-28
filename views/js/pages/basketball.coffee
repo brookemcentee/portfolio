@@ -32,19 +32,13 @@ class PageBasketball extends React.Component
         title="process"
       >
         <div className="ordered-list">
-          <div>1. Ideation</div>
-          <div>2. External Resource Research</div>
-          <div>3. Content Inventory</div>
-          <div>4. Card Sort</div>
-          <div>5. Site Map</div>
-          <div>6. Sketches</div>
-          <div>7. Wireframe</div>
+          <div>1. Research</div>
+          <div>2. Content Inventory</div>
+          <div>3. Card Sort</div>
+          <div>4. Sitemap</div>
+          <div>5. Sketches</div>
+          <div>6. Wireframe</div>
         </div>
-      </Paragraph>
-      <Paragraph
-        title="ideation"
-      >
-        Each team member shared his or her individual topic proposal in order to indicate a starting point through similarities. Each proposal focused on health/wellness or sports/fitness. As a team, we brainstormed potential topics and concluded that a basketball informational website with a focus on fundamental skills, offensive skills, defensive skills, and training/conditioning would best suit our combined interests.
       </Paragraph>
       <Paragraph
         title="research"
@@ -59,15 +53,15 @@ class PageBasketball extends React.Component
       <Paragraph
         title="card sort"
       >
-        In understanding that our content inventory and site map may not perfectly reflect our potential users’ concepts of the basketball space, we conducted a card sort. The card sort helped us to gain more insight into how people categorize items within the basketball space. For the card sort we included the existing categories of Fundamentals, Offense, Defense and Strength & Conditioning as well a 52 items of content from the content inventory. I set up our card sort using ConceptCodify, an online card sorting tool. Each team member sent the card sort out to friends, family, peers, etc. in order to obtain a wide range of data.
+        To help us gain more insight into how people categorize items within the basketball space, we conducted an online card sort. We included the existing categories of Fundamentals, Offense, Defense and Strength & Conditioning and 52 items from the content inventory. Each team member sent the card sort out to friends, family, and peers in order to obtain a wide range of data.
       </Paragraph>
       <Paragraph
-        title="site map"
+        title="sitemap"
       >
-        I took the role of creating the site map. For the first iteration of the site map, I sketched out what the organization of the website might look like. After analyzing the card sort results, I had a better idea of the organization of the website and ensured that the final iteration of the site map reflected the results and recommendations pulled from our card sort analysis. I used draw.io, a Google Drive plugin to create the site map.
+        After analyzing the card sort results, we had a better idea of the organization of the website and ensured that the final iteration of the site map reflected the results and recommendations pulled from our card sort analysis. We used draw.io, a Google Drive plugin to create the site map.
       </Paragraph>
       <Images
-        images={['/images/basketball-one.jpg']}
+        images={['/images/basketball-sitemap-1.jpg']}
         background="#f2f2f2"
         noShadow
       />
@@ -84,10 +78,13 @@ class PageBasketball extends React.Component
         background="#f2f2f2"
       />
       <Paragraph
+        title="wireframe"
+      >
+        Lastly, we created a <a href="#">wireframe</a> of Basketball Academy using HTML and CSS.
+      </Paragraph>
+      <Paragraph
         title="solution"
       >
-        Online learning has become instinctive for tasks such as learning a language; however, imagine learning how to play a sport online. Sports are learned in a similar way to learning a language: there are vocabulary and rules to learn as well as training and drills that must be executed in order to improve. Take basketball as an example. Basketball begins with rules and the skills required to play. Once all of the rules and skills are learned, drills can be exercised in order to become a more educated player.
-        <br /><br />
         Online Basketball Academy is a informational and educational website for people hoping to learn the game or improve their game. The website pulls together and organizes the rules of the game, the skills necessary to play as well as drills that improve on specific skills at different levels of expertise.
       </Paragraph>
     </Page>
