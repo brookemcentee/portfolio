@@ -11662,7 +11662,7 @@ Images = class Images extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
             var ref;
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
-              { key: i, className: `col-sm-${12 / this.props.images.length} col-xs-12` },
+              { key: i, className: `col-sm-${12 / this.props.images.length} col-xs-12 ${this.props.centered ? 'text-center' : ''}` },
               ((ref = this.props.labels) != null ? ref[i] : void 0) != null ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'span',
                 { className: 'image-label' },
@@ -11686,16 +11686,21 @@ TextBoxes = class TextBoxes extends __WEBPACK_IMPORTED_MODULE_0_react___default.
   }
 
   render() {
+    var children;
+    children = this.props.children;
+    if (!Array.isArray(children)) {
+      children = [children];
+    }
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       { className: 'container-fluid' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'row' },
-        this.props.children.map((box, i) => {
+        children.map((box, i) => {
           return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { key: i, className: `col-sm-${12 / this.props.children.length} col-xs-12` },
+            { key: i, className: `col-sm-${12 / children.length} col-xs-12` },
             box
           );
         })
@@ -11718,7 +11723,7 @@ TextBox = class TextBox extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Co
       { className: 'text-box img-float' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'h4',
-        null,
+        { className: 'text-box-title' },
         this.props.title
       ),
       this.props.children
@@ -34622,7 +34627,21 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
         { title: 'challenge' },
         'The student-facing mobile app required a complete facelift. After trashing the old app, plagued with inconsistency and outdated design paradigms, our work was cut out for us. We challenged ourselves to think backward, a concept I learned about at a design conference just before starting this project. We started with our end goal, a perfectly smooth mobile experience, and worked backward to figure out what we needed to implement to make that ideal experience a reality.'
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-gif.gif'], noShadow: true }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'row' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'col-xs-12 col-sm-8' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { style: {
+                maxWidth: '100%'
+              }, src: '/images/mobile-gif.gif' })
+          )
+        )
+      ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'process' },
@@ -34950,7 +34969,7 @@ PageBasketball = class PageBasketball extends __WEBPACK_IMPORTED_MODULE_0_react_
         { title: 'sitemap' },
         'After analyzing the card sort results, we had a better idea of the organization of the website and ensured that the final iteration of the site map reflected the results and recommendations pulled from our card sort analysis. We used draw.io, a Google Drive plugin to create the site map.'
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/basketball-sitemap-1.jpg'], background: '#f2f2f2', noShadow: true }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/basketball-sitemap-1.jpg'], noShadow: true, centered: true }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'sketches' },
@@ -34964,7 +34983,7 @@ PageBasketball = class PageBasketball extends __WEBPACK_IMPORTED_MODULE_0_react_
         'Lastly, we created a ',
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'a',
-          { href: '#' },
+          { href: '/wireframes/basketball/index.html' },
           'wireframe'
         ),
         ' of Basketball Academy using HTML and CSS.'
@@ -35098,16 +35117,20 @@ PageUdine = class PageUdine extends __WEBPACK_IMPORTED_MODULE_0_react___default.
         'My next role was to create user scenarios for a few of UDine\u2019s features.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_4__components_content__["f" /* TextBox */],
-        { title: 'example scenario' },
-        'Stacy worked from nine to five today and now has night class at 5:45pm. She is very hungry for dinner but realizes that she forgot to pack a meal. It is 5:15pm, so she only has 30 minutes to get dinner and make it to her class on time. Thankfully, she is already on campus so she signs into UDine on her phone and checks to see if the cafeteria is busy. It is, so she uses UDine to order and pay for her favorite pasta dish while heading toward to Student Center. By the time she reaches the cafeteria, Stacy gets a push notification that her food is ready for pick up. She shows her digital receipt to the DDS staff who kindly hands Stacy her dinner. Stacy heads to class with her dinner, making it with five minutes to spare.'
+        __WEBPACK_IMPORTED_MODULE_4__components_content__["g" /* TextBoxes */],
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_4__components_content__["f" /* TextBox */],
+          { title: 'example scenario' },
+          'Stacy worked from nine to five today and now has night class at 5:45pm. She is very hungry for dinner but realizes that she forgot to pack a meal. It is 5:15pm, so she only has 30 minutes to get dinner and make it to her class on time. Thankfully, she is already on campus so she signs into UDine on her phone and checks to see if the cafeteria is busy. It is, so she uses UDine to order and pay for her favorite pasta dish while heading toward to Student Center. By the time she reaches the cafeteria, Stacy gets a push notification that her food is ready for pick up. She shows her digital receipt to the DDS staff who kindly hands Stacy her dinner. Stacy heads to class with her dinner, making it with five minutes to spare.'
+        )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'site map' },
         'My group members and I used all of our research, insights and user scenarios to create a sitemap for UDine.'
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/udine-sitemap-1.jpg'], background: '#f2f2f2', noShadow: true }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/udine-sitemap-1.jpg'], noShadow: true, centered: true }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'prototype' },

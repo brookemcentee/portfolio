@@ -28,10 +28,13 @@ class PageMobile extends React.Component
       >
         The student-facing mobile app required a complete facelift. After trashing the old app, plagued with inconsistency and outdated design paradigms, our work was cut out for us. We challenged ourselves to think backward, a concept I learned about at a design conference just before starting this project. We started with our end goal, a perfectly smooth mobile experience, and worked backward to figure out what we needed to implement to make that ideal experience a reality.
       </Paragraph>
-      <Images
-        images={['/images/mobile-gif.gif']}
-        noShadow
-      />
+      <Paragraph>
+        <div className="row">
+          <div className="col-xs-12 col-sm-8">
+            <img style={maxWidth: '100%'} src="/images/mobile-gif.gif" />
+          </div>
+        </div>
+      </Paragraph>
       <Paragraph
         title="process"
       >

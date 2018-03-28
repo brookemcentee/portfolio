@@ -62,8 +62,8 @@ class PageBasketball extends React.Component
       </Paragraph>
       <Images
         images={['/images/basketball-sitemap-1.jpg']}
-        background="#f2f2f2"
         noShadow
+        centered
       />
       <Paragraph
         title="sketches"
@@ -80,7 +80,7 @@ class PageBasketball extends React.Component
       <Paragraph
         title="wireframe"
       >
-        Lastly, we created a <a href="#">wireframe</a> of Basketball Academy using HTML and CSS.
+        Lastly, we created a <a href="/wireframes/basketball/index.html">wireframe</a> of Basketball Academy using HTML and CSS.
       </Paragraph>
       <Paragraph
         title="solution"
