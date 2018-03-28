@@ -44,7 +44,7 @@ class PageTasks extends React.Component
         The previous version of student tasks had poor usability due to a lack of hierarchy and visual interest. I worked to ensure our new version fixed these issues, without sacrificing any of its strengths.
       </Paragraph>
       <Image
-        src="/images/tasks-one.svg"
+        src="/images/tasks-requirements-1.svg"
       />
       <Paragraph
         title="sketches"
@@ -67,7 +67,7 @@ class PageTasks extends React.Component
         </Subsection>
       </Paragraph>
       <Images
-        images={['/images/tasks-eight.png', '/images/tasks-seven.png']}
+        images={['/images/tasks-sketches-1.png', '/images/tasks-sketches-2.png']}
         background="#f2f2f2"
       />
       <Paragraph
@@ -91,7 +91,7 @@ class PageTasks extends React.Component
         </Subsection>
       </Paragraph>
       <Images
-        images={['/images/tasks-two.svg', '/images/tasks-three.svg']}
+        images={['/images/tasks-mockups-1.svg', '/images/tasks-mockups-2.svg']}
       />
       <Paragraph
         title="development"
@@ -99,11 +99,11 @@ class PageTasks extends React.Component
         With this project, communication with developers was key. Maintaining focus on the goals of the design was paramount to the success of the project. By proactively answering questions and reviewing staging updates, we were able to finish the project with the application staying true to the design.
       </Paragraph>
       <Images
-        images={['/images/tasks-before-one.png', '/images/tasks-after-one.png']}
+        images={['/images/tasks-before-1.png', '/images/tasks-after-1.png']}
         labels={['before', 'after']}
       />
       <Images
-        images={['/images/tasks-before-two.png', '/images/tasks-after-two.png']}
+        images={['/images/tasks-before-2.png', '/images/tasks-after-2.png']}
         labels={['before', 'after']}
       />
     </Page>

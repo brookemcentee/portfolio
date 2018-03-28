@@ -34789,7 +34789,7 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
         { title: 'requirements' },
         'The previous version of student tasks had poor usability due to a lack of hierarchy and visual interest. I worked to ensure our new version fixed these issues, without sacrificing any of its strengths.'
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["b" /* Image */], { src: '/images/tasks-one.svg' }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["b" /* Image */], { src: '/images/tasks-requirements-1.svg' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'sketches' },
@@ -34810,7 +34810,7 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
           'After collecting a content inventory of all information and actions on the page, I separated high priority actions and information from the lower priority. By sketching collapsed tasks alongside tasks with fully expanded details, I established the visual hierarchy of the page. The important information was shown in the  collapsed state, with all other content available  when the component has been expanded.'
         )
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-eight.png', '/images/tasks-seven.png'], background: '#f2f2f2' }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-sketches-1.png', '/images/tasks-sketches-2.png'], background: '#f2f2f2' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'mockups' },
@@ -34831,14 +34831,14 @@ PageTasks = class PageTasks extends __WEBPACK_IMPORTED_MODULE_0_react___default.
           'When tasks are started, they change from blue to orange, indicating that the task requires more action. Once it is marked complete, the task becomes green, sending the student positive feedback. As tasks are completed, the overall progress circles in the sidebar dynamically fill up with color. These color changes are stimulating to the user, and provide incentive for the student to continue completing tasks..'
         )
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-two.svg', '/images/tasks-three.svg'] }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-mockups-1.svg', '/images/tasks-mockups-2.svg'] }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'development' },
         'With this project, communication with developers was key. Maintaining focus on the goals of the design was paramount to the success of the project. By proactively answering questions and reviewing staging updates, we were able to finish the project with the application staying true to the design.'
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-before-one.png', '/images/tasks-after-one.png'], labels: ['before', 'after'] }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-before-two.png', '/images/tasks-after-two.png'], labels: ['before', 'after'] })
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-before-1.png', '/images/tasks-after-1.png'], labels: ['before', 'after'] }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/tasks-before-2.png', '/images/tasks-after-2.png'], labels: ['before', 'after'] })
     );
   }
 
