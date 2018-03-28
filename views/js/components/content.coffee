@@ -93,7 +93,7 @@ class Images extends React.Component
         <div className="row">
           {
             @props.images.map (image, i) =>
-              <div key={i} className="col-sm-#{12 / @props.images.length} col-xs-12">
+              <div key={i} className="col-sm-#{12 / @props.images.length} col-xs-12 #{if @props.centered then 'text-center' else ''}">
                 {
                   if @props.labels?[i]?
                     <span className="image-label">
@@ -118,12 +118,14 @@ class TextBoxes extends React.Component
     return
 
   render: ->
-
+    children = @props.children
+    if not Array.isArray children
+      children = [children]
     <div className="container-fluid">
       <div className="row">
         {
-          @props.children.map (box, i) =>
-            <div key={i} className="col-sm-#{12 / @props.children.length} col-xs-12">
+          children.map (box, i) =>
+            <div key={i} className="col-sm-#{12 / children.length} col-xs-12">
               {box}
             </div>
         }
@@ -140,7 +142,7 @@ class TextBox extends React.Component
   render: ->
 
     <div className="text-box img-float">
-      <h4>{@props.title}</h4>
+      <h4 className="text-box-title">{@props.title}</h4>
       {@props.children}
     </div>
 

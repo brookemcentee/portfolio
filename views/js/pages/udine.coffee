@@ -67,9 +67,11 @@ class PageUdine extends React.Component
       >
         My next role was to create user scenarios for a few of UDine’s features.
       </Paragraph>
-      <TextBox title="example scenario">
-        Stacy worked from nine to five today and now has night class at 5:45pm. She is very hungry for dinner but realizes that she forgot to pack a meal. It is 5:15pm, so she only has 30 minutes to get dinner and make it to her class on time. Thankfully, she is already on campus so she signs into UDine on her phone and checks to see if the cafeteria is busy. It is, so she uses UDine to order and pay for her favorite pasta dish while heading toward to Student Center. By the time she reaches the cafeteria, Stacy gets a push notification that her food is ready for pick up. She shows her digital receipt to the DDS staff who kindly hands Stacy her dinner. Stacy heads to class with her dinner, making it with five minutes to spare.
-      </TextBox>
+      <TextBoxes>
+        <TextBox title="example scenario">
+          Stacy worked from nine to five today and now has night class at 5:45pm. She is very hungry for dinner but realizes that she forgot to pack a meal. It is 5:15pm, so she only has 30 minutes to get dinner and make it to her class on time. Thankfully, she is already on campus so she signs into UDine on her phone and checks to see if the cafeteria is busy. It is, so she uses UDine to order and pay for her favorite pasta dish while heading toward to Student Center. By the time she reaches the cafeteria, Stacy gets a push notification that her food is ready for pick up. She shows her digital receipt to the DDS staff who kindly hands Stacy her dinner. Stacy heads to class with her dinner, making it with five minutes to spare.
+        </TextBox>
+      </TextBoxes>
       <Paragraph
         title="site map"
       >
@@ -77,8 +79,8 @@ class PageUdine extends React.Component
       </Paragraph>
       <Images
         images={['/images/udine-sitemap-1.jpg']}
-        background="#f2f2f2"
         noShadow
+        centered
       />
       <Paragraph
         title="prototype"
