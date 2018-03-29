@@ -21,6 +21,6 @@ app.get '/about', (req, res) ->
   res.render 'index'
   return
 
-app.listen 8080, ->
-  console.log 'Example app listening on port 8080!'
+app.listen process.env.PORT or 8080, ->
+  console.log "Example app listening on port #{process.env.PORT or 8080}!"
   return
