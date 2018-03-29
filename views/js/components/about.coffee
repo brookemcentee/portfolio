@@ -52,11 +52,11 @@ class About extends React.Component
           </div>
           <hr />
           <div className="content-section">
-            <a class="link-underline" href="/pdfs/brooke-mcentee-resume-2018.pdf" target="_blank">resume</a>
+            <a className="link-underline" href="/pdfs/brooke-mcentee-resume-2018.pdf" target="_blank">resume</a>
             <br />
-            <a class="link-underline" href="http://www.linkedin.com/in/brookemcentee" target="_blank">linkedin</a>
+            <a className="link-underline" href="http://www.linkedin.com/in/brookemcentee" target="_blank">linkedin</a>
             <br />
-            <a class="link-underline" href="mailto:brookemc12@gmail.com" target="_blank">email</a>
+            <a className="link-underline" href="mailto:brookemc12@gmail.com" target="_blank">email</a>
           </div>
         </div>
       </div>

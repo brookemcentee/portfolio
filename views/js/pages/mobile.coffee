@@ -78,12 +78,14 @@ class PageMobile extends React.Component
         >
           Our main goal for the new mobile app was to keep it simple. This meant clear navigation, paring down and reorganizing data, simple transitions, and meaningful iconography.
         </Subsection>
-        <Images
+      </Paragraph>
+      <Images
         images={['/images/mobile-simplicity-1.svg', '/images/mobile-simplicity-2.svg', '/images/mobile-simplicity-3.svg', '/images/mobile-simplicity-4.svg']}
-        />
-        <Images
+      />
+      <Images
         images={['/images/mobile-simplicity-5.svg', '/images/mobile-simplicity-6.svg', '/images/mobile-simplicity-7.svg', '/images/mobile-simplicity-8.svg']}
-        />
+      />
+      <Paragraph>
         <Subsection
           title="iconography"
         >
@@ -97,13 +99,13 @@ class PageMobile extends React.Component
         >
           Emphasizing and optimizing discovery within each feature of the mobile app was imperative.
         </Subsection>
-        <Images
-        images={['/images/mobile-discovery-1.svg', '/images/mobile-discovery-2.png', '/images/mobile-discovery-3.png', '/images/mobile-discovery-4.png']}
-        />
-        <Images
-        images={['/images/mobile-discovery-5.svg', '/images/mobile-discovery-6.svg', '/images/mobile-discovery-7.svg', '/images/mobile-discovery-8.svg']}
-        />
       </Paragraph>
+      <Images
+        images={['/images/mobile-discovery-1.svg', '/images/mobile-discovery-2.png', '/images/mobile-discovery-3.png', '/images/mobile-discovery-4.png']}
+      />
+      <Images
+        images={['/images/mobile-discovery-5.svg', '/images/mobile-discovery-6.svg', '/images/mobile-discovery-7.svg', '/images/mobile-discovery-8.svg']}
+      />
       <Paragraph
         title="development"
       >

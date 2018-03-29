@@ -34556,19 +34556,19 @@ About = class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
             { className: 'content-section' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
-              { 'class': 'link-underline', href: '/pdfs/brooke-mcentee-resume-2018.pdf', target: '_blank' },
+              { className: 'link-underline', href: '/pdfs/brooke-mcentee-resume-2018.pdf', target: '_blank' },
               'resume'
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
-              { 'class': 'link-underline', href: 'http://www.linkedin.com/in/brookemcentee', target: '_blank' },
+              { className: 'link-underline', href: 'http://www.linkedin.com/in/brookemcentee', target: '_blank' },
               'linkedin'
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
-              { 'class': 'link-underline', href: 'mailto:brookemc12@gmail.com', target: '_blank' },
+              { className: 'link-underline', href: 'mailto:brookemc12@gmail.com', target: '_blank' },
               'email'
             )
           )
@@ -34700,9 +34700,13 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
           __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
           { title: 'simplicity' },
           'Our main goal for the new mobile app was to keep it simple. This meant clear navigation, paring down and reorganizing data, simple transitions, and meaningful iconography.'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-simplicity-1.svg', '/images/mobile-simplicity-2.svg', '/images/mobile-simplicity-3.svg', '/images/mobile-simplicity-4.svg'] }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-simplicity-5.svg', '/images/mobile-simplicity-6.svg', '/images/mobile-simplicity-7.svg', '/images/mobile-simplicity-8.svg'] }),
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-simplicity-1.svg', '/images/mobile-simplicity-2.svg', '/images/mobile-simplicity-3.svg', '/images/mobile-simplicity-4.svg'] }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-simplicity-5.svg', '/images/mobile-simplicity-6.svg', '/images/mobile-simplicity-7.svg', '/images/mobile-simplicity-8.svg'] }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
+        null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
           { title: 'iconography' },
@@ -34713,10 +34717,10 @@ PageMobile = class PageMobile extends __WEBPACK_IMPORTED_MODULE_0_react___defaul
           __WEBPACK_IMPORTED_MODULE_4__components_content__["e" /* Subsection */],
           { title: 'discovery' },
           'Emphasizing and optimizing discovery within each feature of the mobile app was imperative.'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-discovery-1.svg', '/images/mobile-discovery-2.png', '/images/mobile-discovery-3.png', '/images/mobile-discovery-4.png'] }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-discovery-5.svg', '/images/mobile-discovery-6.svg', '/images/mobile-discovery-7.svg', '/images/mobile-discovery-8.svg'] })
+        )
       ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-discovery-1.svg', '/images/mobile-discovery-2.png', '/images/mobile-discovery-3.png', '/images/mobile-discovery-4.png'] }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_content__["c" /* Images */], { images: ['/images/mobile-discovery-5.svg', '/images/mobile-discovery-6.svg', '/images/mobile-discovery-7.svg', '/images/mobile-discovery-8.svg'] }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_4__components_content__["d" /* Paragraph */],
         { title: 'development' },
