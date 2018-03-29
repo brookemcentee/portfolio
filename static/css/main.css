@@ -1977,6 +1977,9 @@ a:hover {
 .text-center {
   text-align: center;
 }
+.link-underline {
+  text-decoration: underline;
+}
 .no-padding {
   padding: 0;
 }

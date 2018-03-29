@@ -34556,19 +34556,19 @@ About = class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
             { className: 'content-section' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
-              { href: '/pdfs/brooke-mcentee-resume-2018.pdf', target: '_blank' },
+              { 'class': 'link-underline', href: '/pdfs/brooke-mcentee-resume-2018.pdf', target: '_blank' },
               'resume'
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
-              { href: 'http://www.linkedin.com/in/brookemcentee', target: '_blank' },
+              { 'class': 'link-underline', href: 'http://www.linkedin.com/in/brookemcentee', target: '_blank' },
               'linkedin'
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
-              { href: 'mailto:brookemc12@gmail.com', target: '_blank' },
+              { 'class': 'link-underline', href: 'mailto:brookemc12@gmail.com', target: '_blank' },
               'email'
             )
           )
@@ -34983,7 +34983,7 @@ PageBasketball = class PageBasketball extends __WEBPACK_IMPORTED_MODULE_0_react_
         'Lastly, we created a ',
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'a',
-          { href: '/wireframes/basketball/index.html' },
+          { className: 'link-underline', href: '/wireframes/basketball/index.html', target: '_blank' },
           'wireframe'
         ),
         ' of Basketball Academy using HTML and CSS.'
