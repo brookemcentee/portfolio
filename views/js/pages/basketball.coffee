@@ -80,7 +80,7 @@ class PageBasketball extends React.Component
       <Paragraph
         title="wireframe"
       >
-        Lastly, we created a <a href="/wireframes/basketball/index.html">wireframe</a> of Basketball Academy using HTML and CSS.
+        Lastly, we created a <a className="link-underline" href="/wireframes/basketball/index.html" target="_blank">wireframe</a> of Basketball Academy using HTML and CSS.
       </Paragraph>
       <Paragraph
         title="solution"
