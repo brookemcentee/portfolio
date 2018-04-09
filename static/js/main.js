@@ -34548,7 +34548,7 @@ About = class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
             'I was born and raised in Chagrin Falls, Ohio and have a strong connection to the Metroparks and Cleveland sports. My early 20s were spent in Chicago, Illinois spending far too much on the best new restaurants. Much unlike my six months of life in Lyon, France, the gastronomic capital of the world, when all I could afford was a baguette a day.',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-            'Today, I live in St. Louis, Missouri with my boyfriend and our rescue dog, Maisy. Most of my free time is spent in biking through Forest Park, testing a new recipe, or dipping my toes into interior design. I also love to travel; I was most recently in Bend, Oregon skiing Mount Bachelor.'
+            'Today, I live in St. Louis, Missouri with my boyfriend and our rescue dogs, Maisy and Nelly. Most of my free time is spent biking through Forest Park, testing a new recipe, or dipping my toes into interior design. I also love to travel; I was most recently in Bend, Oregon skiing Mount Bachelor.'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('hr', null),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(

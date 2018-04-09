@@ -48,7 +48,7 @@ class About extends React.Component
           <div className="content-section">
             I was born and raised in Chagrin Falls, Ohio and have a strong connection to the Metroparks and Cleveland sports. My early 20s were spent in Chicago, Illinois spending far too much on the best new restaurants. Much unlike my six months of life in Lyon, France, the gastronomic capital of the world, when all I could afford was a baguette a day. 
             <br /><br />
-            Today, I live in St. Louis, Missouri with my boyfriend and our rescue dogs, Maisy and Nelly. Most of my free time is spent in biking through Forest Park, testing a new recipe, or dipping my toes into interior design. I also love to travel; I was most recently in Bend, Oregon skiing Mount Bachelor.
+            Today, I live in St. Louis, Missouri with my boyfriend and our rescue dogs, Maisy and Nelly. Most of my free time is spent biking through Forest Park, testing a new recipe, or dipping my toes into interior design. I also love to travel; I was most recently in Bend, Oregon skiing Mount Bachelor.
           </div>
           <hr />
           <div className="content-section">
