@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "jquery": "^3.3.1",
+    "medium-zoom": "git://github.com/francoischalifour/medium-zoom.git#feat/expand-svgs",
     "pug": "^2.0.0-rc.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

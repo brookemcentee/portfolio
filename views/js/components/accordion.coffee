@@ -46,7 +46,7 @@ class Accordion extends React.Component
     return
 
   render: ->
-    <div className="container-fluid no-padding">
+    <div className="container-fluid no-padding home-page">
       <div className="accordion">
         <div className="col-md-7 accordion-content" style={background: "#{if @state.contentHidden then '#FFF' else '#E2E2E2'}"}>
           <div className="accordion-title">

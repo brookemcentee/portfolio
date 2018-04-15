@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import mediumZoom from 'medium-zoom'
 
 import $ from 'jquery'
 
@@ -75,9 +76,14 @@ class Image extends React.Component
     @state = {}
     return
 
+  componentDidMount: ->
+    mediumZoom ReactDOM.findDOMNode(@refs.image)
+    console.log @refs.image
+    return
+
   render: ->
     <div className="content-image">
-      <img src={@props.src} />
+      <img ref="image" src={@props.src} />
     </div>
 
 class Images extends React.Component 
@@ -85,6 +91,12 @@ class Images extends React.Component
   constructor: (props) ->
     super props
     @state = {}
+    return
+
+  componentDidMount: ->
+    for image, i in @props.images
+      mediumZoom ReactDOM.findDOMNode(@refs["image-#{i}"])
+      console.log @refs["image-#{i}"]
     return
 
   render: ->
@@ -101,6 +113,7 @@ class Images extends React.Component
                     </span>
                 }
                 <img
+                  ref="image-#{i}"
                   className="#{if @props.noShadow then '' else 'img-float'}"
                   src={image}
                 />

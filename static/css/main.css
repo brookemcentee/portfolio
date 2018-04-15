@@ -1955,6 +1955,9 @@ a:hover {
 .full-height {
   height: 100vh;
 }
+.half-height {
+  height: 50vh;
+}
 .img-float {
   max-width: 100%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -1983,9 +1986,6 @@ a:hover {
 .no-padding {
   padding: 0;
 }
-.accordion-content {
-  height: 100vh;
-}
 .about-page {
   background: #CCC;
 }
@@ -1994,7 +1994,12 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
+}
+@media (min-width: 992px) {
+  .about-image-container {
+    height: 100%;
+  }
 }
 .about-image-background {
   background: url('/images/about.jpg');
@@ -2021,6 +2026,14 @@ a:hover {
 .about-content .content-section-title {
   color: #333;
 }
+.accordion-content {
+  height: 50vh;
+}
+@media (min-width: 992px) {
+  .accordion-content {
+    height: 100vh;
+  }
+}
 .accordion-title {
   color: #FFF;
   position: absolute;
@@ -2037,16 +2050,24 @@ a:hover {
   font-size: 32px;
   font-style: italic;
 }
+.accordion-items,
+.accordion-item {
+  height: 50vh;
+}
+@media (min-width: 992px) {
+  .accordion-items,
+  .accordion-item {
+    height: 100vh;
+  }
+}
 .accordion-items {
   position: absolute;
   right: 0;
   top: 0;
-  height: 100vh;
 }
 .accordion-item {
   width: 50px;
   position: absolute;
-  height: 100vh;
 }
 .accordion-links {
   margin-top: 50px;
@@ -2061,6 +2082,7 @@ a:hover {
 }
 .navigation {
   padding-top: 50px;
+  padding-bottom: 30px;
 }
 .navigation a {
   color: #b6b6b6;
@@ -2078,7 +2100,19 @@ a:hover {
 .navigation a.active {
   color: #333;
 }
+@media (min-width: 992px) {
+  .navigation {
+    padding-bottom: 0;
+  }
+}
+.about-page .navigation {
+  padding-bottom: 0;
+}
+.home-page .navigation {
+  padding-bottom: 0;
+}
 .content-author {
+  display: none;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -2089,6 +2123,11 @@ a:hover {
 .content-author a:hover {
   text-decoration: none;
 }
+@media (min-width: 992px) {
+  .content-author {
+    display: block;
+  }
+}
 .content-header-title {
   line-height: 75px;
   font-size: 64px;
@@ -2096,7 +2135,7 @@ a:hover {
   font-family: 'Karla', sans-serif;
 }
 .content-header-subtitle {
-  height: 42px;
+  line-height: 42px;
   font-size: 36px;
   font-style: italic;
   font-family: 'Karla', sans-serif;
@@ -2168,11 +2207,19 @@ a:hover {
   color: #333;
   text-decoration: none;
 }
+.footer-pages {
+  margin-top: 20px;
+}
 .footer-pages a {
   margin-right: 50px;
 }
 .footer-pages a:hover {
   text-decoration: underline;
+}
+@media (min-width: 992px) {
+  .footer-pages {
+    margin-top: 0;
+  }
 }
 .text-box {
   font-family: 'Karla', sans-serif;
