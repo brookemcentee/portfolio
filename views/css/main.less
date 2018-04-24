@@ -43,6 +43,10 @@ a{
   height: 100vh;
 }
 
+.half-height{
+  height: 50vh;
+}
+
 .img-float {
   max-width: 100%;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -78,10 +82,6 @@ a{
   padding: 0;
 }
 
-.accordion-content {
-  .full-height();
-}
-
 .about-page{
   background: #CCC;
 }
@@ -91,7 +91,13 @@ a{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
+}
+
+@media (min-width: @screen-md) {
+  .about-image-container{
+    height: 100%;
+  }
 }
 
 .about-image-background {
@@ -124,6 +130,16 @@ a{
   color: #333;
 }
 
+.accordion-content {
+  .half-height();
+}
+
+@media (min-width: @screen-md) {
+  .accordion-content {
+    .full-height();
+  }
+}
+
 .accordion-title, {
   color: #FFF;
   position: absolute;
@@ -141,17 +157,25 @@ a{
   }
 }
 
+.accordion-items, .accordion-item {
+  .half-height();
+}
+
+@media (min-width: @screen-md) {
+  .accordion-items, .accordion-item {
+    .full-height();
+  }
+}
+
 .accordion-items {
   position:absolute;
   right:0;
   top: 0;
-  .full-height();
 }
 
 .accordion-item {
   width: 50px;
   position: absolute;
-  .full-height();
 }
 
 .accordion-links{
@@ -168,6 +192,7 @@ a{
 
 .navigation{
   padding-top: 50px;
+  padding-bottom: 30px;
   a {
     color: #b6b6b6;
     font-size: 16px;
@@ -185,7 +210,22 @@ a{
   }
 }
 
+@media (min-width: @screen-md) {
+  .navigation{
+    padding-bottom: 0;
+  }
+}
+
+.about-page .navigation {
+  padding-bottom: 0;
+}
+
+.home-page .navigation {
+  padding-bottom: 0;
+}
+
 .content-author{
+  display: none;
   margin-top: 50px;
   margin-bottom: 50px;
   a {
@@ -197,6 +237,12 @@ a{
   }
 }
 
+@media (min-width: @screen-md) {
+  .content-author{
+    display: block;
+  }
+}
+
 .content-header-title{
   line-height: 75px;
   font-size: 64px;
@@ -205,7 +251,7 @@ a{
 }
 
 .content-header-subtitle{
-  height: 42px;
+  line-height: 42px;
   font-size: 36px;
   font-style: italic;
   .sans-serif();
@@ -290,11 +336,18 @@ a{
 }
 
 .footer-pages{
+  margin-top: 20px;
   a {
     margin-right: 50px;
     &:hover{
       text-decoration: underline;
     }
+  }
+}
+
+@media (min-width: @screen-md) {
+  .footer-pages{
+    margin-top: 0;
   }
 }
 
